@@ -1,0 +1,99 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 32px 20px;
+  text-align: center;
+  background-color: #f5f5fa;
+  box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
+
+  @include tablet {
+    padding: 32px;
+
+    &__content {
+      @include position(flex, null, space-between);
+      text-align: left;
+
+      @include desktop {
+        gap: 161px;
+      }
+    }
+
+    &__right {
+      text-align: right;
+
+      @include desktop {
+        text-align: left;
+      }
+    }
+
+    &__left {
+      display: flex;
+      gap: 52px;
+
+      @include desktop {
+        gap: 103px;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 32px 40px;
+
+    & .container {
+      @include position(flex, flex-start, null);
+    }
+  }
+
+  &__nav,
+  &__socs,
+  &__email {
+    margin-bottom: 24px;
+  }
+
+  @include tablet {
+    &__email {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__contacts {
+    font-style: normal;
+  }
+
+  &__link {
+    @include font(null, 16px, 1.25, 0.01em);
+    color: var(--primary-color);
+  }
+
+  &__text,
+  &__item:not(:last-child),
+  &__tel:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__tel,
+  &__email {
+    color: var(--secondary-color);
+  }
+}
+
+.logo__link {
+  padding-bottom: 20px;
+
+  @include desktop {
+    padding-right: 277px;
+  }
+}
