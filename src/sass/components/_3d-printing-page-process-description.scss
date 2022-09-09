@@ -24,24 +24,32 @@
     max-width: 1440px;
   }
 }
-
-.service__item:not(:last-child) {
-  margin-bottom: 50px;
+.service__item {
   width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 85px;
+  }
+}
+.service__item:not(:last-child) {
+  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
     margin-bottom: 100px;
-    gap: 85px;
   }
 }
 .service__photo {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+.service__img {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
 }
 .description {
   margin-bottom: 24px;
