@@ -1,72 +1,70 @@
 .container {
+  max-width: 1440px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
     max-width: 1440px;
-
-    @include mobile {
-        max-width: 480px;
-    }
-
-    @include tablet {
-        max-width: 768px;
-    }
-
-    @include desktop {
-        max-width: 1440px;
-    }
+  }
 }
-
-
 .modeling-hero {
-    padding: 40px 20px;
+  padding: 40px 20px;
 
-    @include tablet {
-        padding: 34px 0px 41px 32px;
-    }
+  @include tablet {
+    padding: 34px 0px 41px 32px;
+  }
 
-    @include desktop {
-        padding: 100px 189px 100px 149px;
-    }
+  @include desktop {
+    padding: 100px 189px 100px 149px;
+  }
 }
 
 .modeling-hero__wrap {
-    @include desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .modeling-hero__title {
-    @include font (700, 24px, 1.25, null);
-    color: #487996;
-    margin-top: 0px;
-    margin-bottom: 16px;
+  @include font(700, 24px, 1.25, null);
+  color: #487996;
+  margin-top: 0px;
+  margin-bottom: 16px;
 
-    @include tablet {
-        @include font (700, 36px, 1.25, null);
-    }
+  @include tablet {
+    @include font(700, 36px, 1.25, null);
+  }
 
-    @include desktop {
-        @include font (700, 48px, 1.25, null);
-        margin-bottom: 24px;
-    }
+  @include desktop {
+    @include font(700, 48px, 1.25, null);
+    margin-bottom: 24px;
+  }
 }
 
 .modeling-hero__text {
-    @include font (300, 16px, 1.25, null);
-    color: #2B2B2B;
-    max-width: 280px;
-    // margin: 0;
+  @include font(300, 16px, 1.25, null);
+  color: #2b2b2b;
+  max-width: 280px;
+  // margin: 0;
 
-    &:not(:first-child) {
-        margin-bottom: 16px;
-    }
+  &:not(:first-child) {
+    margin-bottom: 16px;
+  }
 
-    @include tablet {
-        max-width: 515px;
-    }
+  @include tablet {
+    max-width: 515px;
+  }
 
-    @include desktop {
-        @include font (300, 18px, 1.28, null);
-        max-width: 515px;
-    }
+  @include desktop {
+    @include font(300, 18px, 1.28, null);
+    max-width: 515px;
+  }
 }
