@@ -1,17 +1,3 @@
-ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-p {
-  margin: 0;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-}
 
 .footer {
   padding: 32px 20px;
@@ -19,12 +5,24 @@ a {
   background-color: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 
+  &__logo {
+    padding-bottom: 20px;
+
+    @include desktop {
+      padding-right: 277px;
+    }
+  }
   @include tablet {
     padding: 32px;
 
     &__content {
       @include position(flex, null, space-between);
       text-align: left;
+
+
+      @media screen and (min-width: 1200px) {
+        justify-content: space-evenly;
+      }
 
       @include desktop {
         gap: 161px;
@@ -76,6 +74,13 @@ a {
   &__link {
     @include font(null, 16px, 1.25, 0.01em);
     color: var(--primary-color);
+
+    transition: color var(--duration), var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: #1a3ebd;
+    }
   }
 
   &__text,
@@ -86,6 +91,16 @@ a {
 
   &__tel,
   &__email {
+    display: block;
+    color: var(--secondary-color);
+
+    transition: color var(--duration), var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: #1a3ebd;
+    }
+=======
     color: var(--secondary-color);
   }
 }
