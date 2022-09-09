@@ -19,6 +19,10 @@
       @include position(flex, null, space-between);
       text-align: left;
 
+      @media screen and (min-width: 1200px) {
+        justify-content: space-evenly;
+      }
+
       @include desktop {
         gap: 161px;
       }
@@ -70,8 +74,11 @@
     @include font(null, 16px, 1.25, 0.01em);
     color: var(--primary-color);
 
-    &:hover {
-      text-decoration: underline;
+    transition: color var(--duration), var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: #1a3ebd;
     }
   }
 
@@ -86,8 +93,11 @@
     display: block;
     color: var(--secondary-color);
 
-    &:hover {
-      text-decoration: underline;
+    transition: color var(--duration), var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: #1a3ebd;
     }
   }
 }
