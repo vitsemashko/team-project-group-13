@@ -1,0 +1,143 @@
+.container{
+    min-width: 320px;
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: 480px){
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1440px){
+        max-width: 1440px;
+    }
+}
+
+.scanning-hero-container {
+    position: relative;
+  }
+  
+  .scanning-hero {
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    .scanning-hero {
+      margin-bottom: 52px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .scanning-hero {
+      padding-left: 0px;
+      margin-bottom: 100px;
+    }
+  }
+  
+  .scanning-hero__title {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    .scanning-hero__title {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.25;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .scanning-hero__title {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 1.25;
+    }
+  }
+  
+  .scanning-hero__description {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-color);
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .scanning-hero__description {
+      max-width: 514px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .scanning-hero__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -32px;
+      margin-top: -24px;
+    }
+    .scanning-hero__description-span {
+      display: block;
+    }
+  
+    .scanning-hero__description {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.25;
+      max-width: 515px;
+      margin-top: 24px;
+      margin-left: 32px;
+      flex-basis: calc((100% - 70px) / 2);
+      float: left;
+    }
+  
+    .one {
+      order: 1;
+    }
+    .two {
+      order: 3;
+    }
+    .three {
+      order: 2;
+    }
+  }
+  
+  .scanning-hero__img {
+    margin-bottom: 24px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .scanning-hero__img {
+      position: absolute;
+      right: -15px;
+      top: 170px;
+      z-index: -1;
+      margin-bottom: auto;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .scanning-hero__img {
+      right: 65px;
+      top: 116px;
+    }
+  }
