@@ -1,15 +1,118 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop() {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  max-width: 480px;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    max-width: 1440px;
+  }
+}
+.service {
+  .container {
+    @include position(flex, null, center);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include tablet {
+      gap: 60px;
+    }
+    @include desktop {
+      gap: 100px;
+    }
+  }
+  &__item {
+    width: 100%;
+    @include tablet {
+      display: flex;
+      gap: 32px;
+    }
+    @include desktop {
+      gap: 85px;
+    }
+  }
+  &__photo {
+    @media screen and (max-width: 479.5px) {
+      @include position(flex, null, center);
+    }
+    margin-bottom: 20px;
+  }
+  &__img {
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+  &__thumb {
+    max-width: 100%;
+    @include mobile {
+      width: 280px;
+    }
+    @include tablet {
+      width: 336px;
+    }
+    @include desktop {
+      width: 734px;
+    }
+  }
+  &__button {
+    display: block;
+    width: 280px;
+    height: 56px;
+    @media screen and (max-width: 479.5px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include font(700, 16px, 1.5, 0.01em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+
+    border: none;
+    background: #f5f5fa;
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+      5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+    border-radius: 30.5px;
+  }
 }
 
-.service__list {
-  width: 100%;
-}
-.service__item:not(:last-child) {
-  margin-bottom: 50px;
+.description {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 56px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+    @include desktop {
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    @include font(300, 16px, 1.25, null);
+    @include desktop {
+      @include font(300, 18px, 1.28, null);
+    }
+    color: var(--primary-color);
+  }
+  &__name {
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--secondary-color);
+  }
 }
