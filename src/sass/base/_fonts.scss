@@ -28,3 +28,19 @@
   font-style: normal;
   font-display: fallback;
 }
+@font-face {
+  font-family: 'Caviar Dreams';
+  src: local('Caviar Dreams'),
+    url('../fonts/Caviar Dreams.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Caviar Dreams';
+  src: local('Caviar Dreams'),
+    url('../fonts/Caviar Dreams Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
