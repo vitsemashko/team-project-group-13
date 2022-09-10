@@ -1,18 +1,168 @@
-.container{
-    min-width: 320px;
-    max-width: 480px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @media screen and (min-width: 480px){
-        max-width: 480px;
+
+
+.scanning-process__title {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+    margin-bottom: 16px;
+    color: var(--secondary-color);
+  }
+  
+  .scanning-process {
+    padding-right: 20px;
+    margin-bottom: 52px;
+  }
+  @media screen and (min-width: 768px) {
+    .scanning-process__title {
+      margin-bottom: 24px;
     }
-    @media screen and (min-width: 768px){
-        max-width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    .scanning-process {
+      padding-left: 0px;
+      margin-bottom: 100px;
     }
-    @media screen and (min-width: 1440px){
-        max-width: 1440px;
+    .scanning-process__title {
+      margin-bottom: 52px;
     }
-}
+  }
+  
+  .scanning-process__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+  
+  .scanning-process__item-title {
+    display: block;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-align: center;
+    color: var(--secondary-color);
+    min-width: 50px;
+    word-wrap: break-word;
+  }
+  .scanning-process__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 21px;
+  
+    width: 133px;
+    height: 183px;
+    background: #ffffff;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+    border-radius: 50px 0px;
+  
+    margin-top: 15px;
+    margin-left: 15px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  
+  .img-one::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    content: url(../images/3d-scan/3d-scan01m-x1.png);
+  }
+  .img-two::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    content: url(../images/3d-scan/3d-scan02m-x1.png);
+  }
+  .img-three::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    content: url(../images/3d-scan/3d-scan03m-x1.png);
+  }
+  .img-four::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    content: url(../images/3d-scan/3d-scan04m-x1.png);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .scanning-process__item {
+      width: 153px;
+      height: 210px;
+      margin-top: 12px;
+      margin-left: 12px;
+      flex-basis: calc((100% - 48px) / 4);
+    }
+    .img-one::before {
+        content: url(../images/3d-scan/3d-scan01t-x1.png);
+    }
+    .img-two::before {
+        content: url(../images/3d-scan/3d-scan02t-x1.png);
+    }
+    .img-three::before {
+        content: url(../images/3d-scan/3d-scan03t-x1.png);
+    }
+    .img-four::before {
+        content: url(../images/3d-scan/3d-scan04t-x1.png);
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .scanning-process__item {
+      width: 250px;
+      height: 298px;
+  
+      margin-top: 21px;
+      margin-left: 21px;
+  
+      flex-basis: calc((100% - 84px) / 4);
+    }
+    .img-one::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      content: url(../images/3d-scan/3d-scan01d-x1.png);
+    }
+    .img-two::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      content: url(../images/3d-scan/3d-scan02d-x1.png);
+    }
+    .img-three::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      content: url(../images/3d-scan/3d-scan03d-x1.png);
+    }
+    .img-four::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      content: url(../images/3d-scan/3d-scan04d-x1.png);
+    }
+  }
+  
+ 
+  .scanning-process__item-titile-one,
+  .scanning-process__item-titile-two {
+    display: block;
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .scanning-process__item-titile-one {
+      display: inline;
+    }
+  }
