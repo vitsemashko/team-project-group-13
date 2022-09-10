@@ -7,9 +7,9 @@
 
 .main-hero__title {
   @include font(400, 18px, 1.17, null);
-  font-family: 'Caviar Dreams';
+  font-family: var(--font-second);
   text-align: center;
-  color: #2b2b2b;
+  color: var(--primary-color);
   max-width: 280px;
   margin-top: 40px;
 
@@ -19,7 +19,7 @@
     @include font(400, 24px, 1.17, null);
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     margin-top: 98px;
     max-width: 630px;
     @include font(400, 48px, 1.17, null);
@@ -36,7 +36,7 @@
     gap: 29px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     gap: 32px;
   }
 }
@@ -59,15 +59,15 @@
 
 .main-hero__text {
   @include font(400, 16px, 1.19, null);
-  font-family: 'Caviar Dreams';
+  font-family: var(--font-second);
   text-align: center;
-  color: #2b2b2b;
+  color: var(--primary-color);
 
   @include tablet {
     @include font(400, 18px, 1.17, null);
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     @include font(400, 36px, 1.17, null);
   }
 }
