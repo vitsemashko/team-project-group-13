@@ -1,0 +1,40 @@
+.printing-examples > .container {padding: 40px 20px; 
+    @include tablet {padding: 60px 32px;};
+    @include desktop {padding-top: 120px 32px}
+}
+    
+.printing-examples__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(30 / 24);
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    
+    @include tablet {margin-bottom: 32px;font-size: 36px;
+        line-height:calc(45 / 36);};
+    @include desktop {margin-bottom: 62px;font-size: 48px;
+            line-height:calc(60 / 48);}
+}
+.printing-examples-list {display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-items: center;
+   column-gap: 32px;
+row-gap: 24px;
+}
+
+.printing-examples-list__item {width: 100%;
+
+    @include tablet {width: calc((100% - 32px) / 2);} }
+
+
+.printing-examples-list__heading {font-weight: 300;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: var(--accent-color);
+    margin-top: 8px;
+    max-width: 320;
+    @include tablet {margin-top: 16px; max-width: 336px};
+    @include desktop {font-size: 18px;
+        line-height: calc(23 / 18);
+    max-width: 555px;}}
