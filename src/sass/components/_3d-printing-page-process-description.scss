@@ -54,6 +54,9 @@
       @include position(flex, null, center);
     }
     margin-bottom: 20px;
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
   &__img {
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
@@ -70,30 +73,34 @@
       width: 734px;
     }
   }
-  &__button {
-    display: block;
+  &__.take-order-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
     width: 280px;
     height: 56px;
-    @media screen and (max-width: 479.5px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @include font(700, 16px, 1.5, 0.01em);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-    border: none;
     background-color: #f5f5fa;
     border-radius: 30.5px;
-    // transition-property: box-shadow;
-    // transition-duration: var(--duration);
-    // transition-timing-function: var(--timing-function);
-    // &:hover,
-    // &:focus {
-    //   box-shadow: -10px -10px 20px #ffffff,
-    //     10px 10px 20px rgba(72, 121, 150, 0.1),
-    //     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-    // }
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+      5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff176;
+    }
+
+    @include tablet {
+      width: 277px;
+      padding: 16px 31px;
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--secondary-color);
+    }
   }
 }
 
@@ -121,4 +128,34 @@
 
     color: var(--secondary-color);
   }
+}
+.take-order-btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  width: 280px;
+  height: 56px;
+  background-color: #f5f5fa;
+  border-radius: 30.5px;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff176;
+  }
+
+  @include tablet {
+    width: 277px;
+    padding: 16px 31px;
+  }
+}
+
+.take-order-btn__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
 }
