@@ -1,4 +1,6 @@
-.gallery > .container {
+.gallery > .container {display: flex;
+  flex-direction: column;
+
   padding: 40px 20px;
   @include tablet {
     padding: 60px 32px;
@@ -8,10 +10,8 @@
   }
 }
 
-.gallery__heading {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: calc(30 / 24);
+.gallery__heading {text-align: left;
+  @include font(700, 24px, 1.25, null);
   color: var(--accent-color);
   margin-bottom: 16px;
 
@@ -24,29 +24,32 @@
     margin-bottom: 62px;
     font-size: 48px;
     line-height: calc(60 / 48);
+    margin-left: 149px;
   }
 }
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
+  justify-content: center;
   column-gap: 32px;
   row-gap: 24px;
+  width: 100%;
 }
 
 .gallery-list__item {
-  width: 100%;
+  width: 280px;
 
   @include tablet {
-    width: calc((100% - 32px) / 2);
+    width: 336px;
+  };
+  @include desktop {
+    width: 555px;
   }
 }
 
 .gallery-list__heading {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: calc(20 / 16);
+  @include font(300, 16px, 1.25, null);
   color: var(--accent-color);
   margin-top: 8px;
   max-width: 320;
