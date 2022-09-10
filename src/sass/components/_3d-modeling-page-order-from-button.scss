@@ -1,0 +1,32 @@
+.take-order-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    width: 280px;
+    height: 56px;
+    background-color: #F5F5FA;
+    border-radius: 30.5px;
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff176;
+    }
+
+    @include tablet {
+        width: 277px;
+    }
+}
+
+.take-order-btn__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+
+    &:focus {
+        font-weight: 705;
+    }
+}
