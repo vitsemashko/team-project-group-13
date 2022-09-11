@@ -1,16 +1,36 @@
 .pattern-wrap {
   position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  min-height: 1997px;
+  z-index: -1;
+
+  @include tablet {
+    max-width: 768px;
+    min-height: 1945px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+    min-height: 3037px;
+  }
 }
 
 .pattern__item--1 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 32px;
-  top: 1px;
-  border-radius: 35px 0px 0px 0px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 1px;
+    border-radius: 35px 0px 0px 0px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 30px;
@@ -22,12 +42,17 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  left: 233px;
-  top: 1px;
+  top: 0;
+  left: 0;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 35px 35px 0px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    left: 233px;
+    top: 1px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 292px;
@@ -36,30 +61,38 @@
 }
 
 .pattern__item--3 {
-  position: absolute;
-  width: 144px;
-  height: 144px;
-  left: 569px;
-  top: 42px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 72px 0px 0px 72px;
-  transform: rotate(-90deg);
+  display: none;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tablet {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    left: 569px;
+    top: 42px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px 0px 72px;
+    transform: rotate(-90deg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: none;
   }
 }
 
 .pattern__item--4 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 32px;
-  top: 74px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 35px 0px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 74px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 30px;
@@ -69,15 +102,19 @@
 }
 
 .pattern__item--5 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 105px;
-  top: 71px;
-  border-radius: 35px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 105px;
+    top: 71px;
+    border-radius: 35px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 174px;
@@ -87,15 +124,19 @@
 }
 
 .pattern__item--6 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 106px;
-  top: 148px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 35px 0px 0px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 106px;
+    top: 148px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 174px;
@@ -105,15 +146,19 @@
 }
 
 .pattern__item--7 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 32px;
-  top: 222px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 0px 35px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 222px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 30px;
@@ -123,15 +168,19 @@
 }
 
 .pattern__item--8 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 106px;
-  top: 296px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 35px 0px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 106px;
+    top: 296px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 174px;
@@ -141,15 +190,19 @@
 }
 
 .pattern__item--9 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 32px;
-  top: 358px;
-  border-radius: 35px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 358px;
+    border-radius: 35px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 30px;
@@ -162,12 +215,17 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  left: 32px;
-  top: 432px;
+  left: -29px;
+  top: 295px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 35px 0px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    left: 32px;
+    top: 432px;
+  }
+
+  @include desktop {
     width: 110px;
     height: 144px;
     left: 30px;
@@ -180,12 +238,17 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  left: 32px;
-  top: 646px;
+  left: -17px;
+  top: 643px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 35px 0px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    left: 32px;
+    top: 646px;
+  }
+
+  @include desktop {
     width: 140px;
     height: 161px;
     left: 30px;
@@ -195,15 +258,19 @@
 }
 
 .pattern__item--12 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: 106px;
-  top: 940px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 35px 0px 0px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 106px;
+    top: 940px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: 174px;
@@ -216,12 +283,17 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  left: 32px;
-  top: 1014px;
+  left: -18px;
+  top: 1062px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 0px 35px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    left: 32px;
+    top: 1014px;
+  }
+
+  @include desktop {
     width: 141px;
     height: 145px;
     left: 30px;
@@ -231,15 +303,19 @@
 }
 
 .pattern__item--14 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  left: -17px;
-  top: 1329px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 35px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: -17px;
+    top: 1329px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     left: -61px;
@@ -252,12 +328,17 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  right: 215px;
-  top: 1px;
+  right: 0;
+  top: 0;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 35px 0px 0px 35px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    right: 215px;
+    top: 1px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 267px;
@@ -267,14 +348,18 @@
 }
 
 .pattern__item--16 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 106px;
-  top: 78px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 78px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 176px;
@@ -283,15 +368,19 @@
 }
 
 .pattern__item--17 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 32px;
-  top: 78px;
-  border-radius: 0px 0px 72px 0px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 78px;
+    border-radius: 0px 0px 72px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 32px;
@@ -301,15 +390,19 @@
 }
 
 .pattern__item--18 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 106px;
-  top: 152px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 35px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 152px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 176px;
@@ -319,15 +412,19 @@
 }
 
 .pattern__item--19 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 32px;
-  top: 222px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 25px 0px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 222px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 32px;
@@ -337,15 +434,19 @@
 }
 
 .pattern__item--20 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 106px;
-  top: 296px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 0px 35px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 296px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 176px;
@@ -355,15 +456,19 @@
 }
 
 .pattern__item--21 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 32px;
-  top: 296px;
-  border-radius: 72px 72px 0px 0px;
-  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 296px;
+    border-radius: 72px 72px 0px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 32px;
@@ -373,16 +478,20 @@
 }
 
 .pattern__item--22 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 32px;
-  top: 370px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 35px 0px 0px;
-  transform: rotate(180deg);
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 370px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+  }
+
+  @include desktop {
     width: 144px;
     height: 124px;
     right: 35px;
@@ -392,16 +501,20 @@
 }
 
 .pattern__item--23 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 32px;
-  top: 510px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 35px 0px;
-  transform: rotate(-180deg);
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 510px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+    transform: rotate(-180deg);
+  }
+
+  @include desktop {
     width: 142px;
     height: 144px;
     right: 35px;
@@ -415,11 +528,15 @@
   width: 36px;
   height: 74px;
   right: 0px;
-  top: 583px;
+  top: 581px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 72px 0 0 72px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    top: 583px;
+  }
+
+  @include desktop {
     width: 72px;
     height: 144px;
     right: 0px;
@@ -430,7 +547,7 @@
 .pattern__item--25 {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     position: absolute;
     width: 74px;
     height: 74px;
@@ -445,13 +562,18 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  right: 32px;
-  top: 983px;
+  right: 0;
+  top: 1025px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 25px 0px;
   transform: rotate(90deg);
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    right: 32px;
+    top: 983px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 35px;
@@ -464,12 +586,17 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  right: 32px;
-  top: 1359px;
+  right: 0;
+  top: 1352px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 25px 0px;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    right: 32px;
+    top: 1359px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
     right: 35px;
@@ -479,15 +606,19 @@
 }
 
 .pattern__item--28 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 106px;
-  top: 1433px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 0px 35px;
+  display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 1433px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 116px;
     right: 178px;
