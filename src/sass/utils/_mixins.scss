@@ -11,6 +11,16 @@
   justify-content: $jc;
 }
 
+@mixin pattern($w, $h, $t, $r, $b, $l, $br) {
+  width: $w;
+  height: $h;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+  border-radius: $br;
+}
+
 @mixin mobile {
   @media screen and (min-width: 480px) {
     @content;

@@ -1,0 +1,73 @@
+.main-hero > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.main-hero__title {
+  @include font(400, 18px, 1.17, null);
+  font-family: var(--font-second);
+  text-align: center;
+  color: var(--primary-color);
+  max-width: 280px;
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 34px;
+    max-width: 336px;
+    @include font(400, 24px, 1.17, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 98px;
+    max-width: 630px;
+    @include font(400, 48px, 1.17, null);
+  }
+}
+.main-hero__images-wrap {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  @include tablet {
+    gap: 29px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.main-hero__image {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+}
+
+.main-hero__image--robot {
+  border-radius: 0px 35px 0px 0px;
+}
+
+.main-hero__image--lamps {
+  border-radius: 100px;
+}
+
+.main-hero__image--skull {
+  border-radius: 0px 25px;
+}
+
+.main-hero__text {
+  @include font(400, 16px, 1.19, null);
+  font-family: var(--font-second);
+  text-align: center;
+  color: var(--primary-color);
+
+  @include tablet {
+    @include font(400, 18px, 1.17, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 36px, 1.17, null);
+  }
+}
