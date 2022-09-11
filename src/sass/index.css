@@ -1,27 +1,27 @@
 @font-face {
-  font-family: "Cera Pro";
-  src: local("Cera Pro"), url("../fonts/Cera Pro Light.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: local('Cera Pro'), url('../fonts/Cera Pro Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: local("Cera Pro"), url("../fonts/Cera Pro Medium.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: local('Cera Pro'), url('../fonts/Cera Pro Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: local("Cera Pro"), url("../fonts/Cera Pro Bold.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: local('Cera Pro'), url('../fonts/Cera Pro Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
-  font-family: "Cera Pro";
-  src: local("Cera Pro"), url("../fonts/Cera Pro Black.ttf") format("truetype");
+  font-family: 'Cera Pro';
+  src: local('Cera Pro'), url('../fonts/Cera Pro Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: fallback;
@@ -36,7 +36,7 @@
 html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 html {
@@ -49,7 +49,8 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 hr {
@@ -59,7 +60,7 @@ hr {
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -71,7 +72,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace;
   font-size: 1em;
 }
 
@@ -116,9 +118,9 @@ select {
   text-transform: none;
 }
 
-[type=button],
-[type=reset],
-[type=submit],
+[type='button'],
+[type='reset'],
+[type='submit'],
 button {
   -webkit-appearance: button;
 }
@@ -149,7 +151,7 @@ progress {
   height: auto;
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -232,7 +234,7 @@ img {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
@@ -244,7 +246,7 @@ img {
   --accent-color-second: #bdbdbd;
   --bcg-color-one: #ffffff;
   --bcg-color-two: #e5e5e5;
-  --font-main: "Cera Pro", serif;
+  --font-main: 'Cera Pro', serif;
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
