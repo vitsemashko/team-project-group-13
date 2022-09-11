@@ -1,0 +1,104 @@
+.model-wrap {
+  position: relative;
+  width: 1440px;
+  height: 3000px;
+  background-color: #ffffff;
+  &__item-1 {
+    position: absolute;
+    width: 141px;
+    height: 145px;
+
+    border-radius: 72px 0px 0px 72px;
+    transform: rotate(180deg);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+  &__item-2 {
+    position: absolute;
+    width: 141px;
+    height: 145px;
+
+    border-radius: 72px 0px 0px 72px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+  &__item-3 {
+    position: absolute;
+    width: 82px;
+    height: 78px;
+
+    border-radius: 72px 0px 0px 72px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+  &__item-4 {
+    position: absolute;
+    width: 134px;
+    height: 137px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 72px 0px 0px;
+  }
+  &__item-5 {
+    position: absolute;
+    width: 137px;
+    height: 144px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
+  }
+  &__item-6 {
+    position: absolute;
+    width: 137px;
+    height: 134px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+  }
+  &__item-7 {
+    position: absolute;
+    width: 141px;
+    height: 145px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 72px 0px 0px;
+  }
+  &__item-8 {
+    position: absolute;
+    width: 138px;
+    height: 145px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 72px;
+  }
+  &__item-9 {
+    position: absolute;
+    width: 144px;
+    height: 140px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
+    transform: rotate(90deg);
+  }
+  &__item-10 {
+    position: absolute;
+    width: 141px;
+    height: 144px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+  }
+  &__item-11 {
+    position: absolute;
+    width: 140px;
+    height: 145px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
+  }
+  &__item-12 {
+    position: absolute;
+    width: 141px;
+    height: 116px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 72px;
+  }
+}
