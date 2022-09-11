@@ -333,8 +333,8 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 1.25;
+    line-height: 1.25;
+    margin-bottom: 60px;
   }
 }
 .scanning-hero__description {
@@ -407,7 +407,6 @@ img {
 @media screen and (min-width: 1440px) {
   .scanning-hero__img {
     right: 400px;
-    top: 116px;
   }
 }
 .scanning-process__title {
@@ -453,7 +452,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.28;
   text-align: center;
   text-align: center;
   color: var(--secondary-color);

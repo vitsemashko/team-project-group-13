@@ -24,12 +24,13 @@
   .scanning-hero {
     padding-right: 20px;
   }
-  @media screen and (min-width: 768px) {
+
+  @include tablet {
     .scanning-hero {
       margin-bottom: 52px;
     }
   }
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     .scanning-hero {
       padding-left: 0px;
       margin-bottom: 100px;
@@ -39,24 +40,24 @@
   .scanning-hero__title {
     font-family: 'Cera Pro';
     font-style: normal;
-    @include font(700, 24px, 1.25);
+    @include font(700, 24px, 1.25, null);
     color: var(--secondary-color);
     margin-bottom: 16px;
     
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     .scanning-hero__title {
         font-family: 'Cera Pro';
         font-style: normal;
-        @include font(700, 36px, 1.25);
+        @include font(700, 36px, 1.25, null);
     }
   }
   
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     .scanning-hero__title {
         font-family: 'Cera Pro';
         font-style: normal;
-        @include font(700, 48px, 1.25);
+        @include font(700, 48px, 1.25, null);
         margin-bottom: 60px;
     }
   }
@@ -64,7 +65,7 @@
   .scanning-hero__description {
     font-family: 'Cera Pro';
     font-style: normal;
-    @include font(300, 16px, 1.25);
+    @include font(300, 16px, 1.25, null);
     color: var(--primary-color);
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -74,13 +75,13 @@
       margin-bottom: 24px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     .scanning-hero__description {
       max-width: 514px;
     }
   }
   
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     .scanning-hero__list {
       display: flex;
       flex-wrap: wrap;
@@ -94,7 +95,7 @@
     .scanning-hero__description {
         font-family: 'Cera Pro';
         font-style: normal;
-        @include font(300, 16px, 1.25);
+        @include font(300, 16px, 1.25, null);
       max-width: 515px;
       margin-top: 24px;
       margin-left: 32px;
@@ -119,7 +120,7 @@
     margin-right: auto
   }
   
-  @media screen and (min-width: 768px) {
+  @include tablet {
     .scanning-hero__img {
       position: absolute;
       right: -15px;
@@ -128,9 +129,9 @@
       margin-bottom: auto;
     }
   }
-  @media screen and (min-width: 1440px) {
+  @include desktop {
     .scanning-hero__img {
       right: 400px;
-      top: 116px;
+     
     }
   }
