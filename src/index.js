@@ -20,4 +20,3 @@ span.onclick = function () {
   document.body.classList.toggle('modal-open');
   modal.style.display = 'none';
 };
-
