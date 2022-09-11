@@ -10,16 +10,6 @@
 
   @include retina {
   }
-
-  // @include mobile {
-  //   max-width: 480px;
-  // }
-  // @include tablet {
-  //   max-width: 768px;
-  // }
-  // @include desktop {
-  //   max-width: 1200px;
-  // }
 }
 .container-desktop {
   @include desktop {
@@ -27,6 +17,8 @@
   }
 }
 .hero-title {
+  @include font {
+  }
   font-family: 'Cera Pro';
   font-style: normal;
   font-weight: 700;
@@ -43,12 +35,12 @@
     line-height: calc(60 / 48);
   }
 }
-.contacts-her_container {
+.contacts-hero__container {
   @include tablet {
     display: flex;
   }
 }
-.contacts-hero-content {
+.contacts-hero__content {
   @include tablet {
     margin-left: 32px;
   }
@@ -78,7 +70,7 @@
 .contacts-hero__text {
   font-family: 'Cera Pro';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #2b2b2b;
@@ -107,7 +99,7 @@
 .contacts-hero__emoji {
   font-family: 'Cera Pro';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #2b2b2b;
