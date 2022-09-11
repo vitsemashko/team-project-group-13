@@ -240,6 +240,7 @@ img {
 :root {
   --primary-color: #2b2b2b;
   --secondary-color: #487996;
+<<<<<<< HEAD
   --accent-color:#008CEF
   --accent-color-second:#BDBDBD;
   --bcg-color-one: #ffffff;
@@ -247,4 +248,17 @@ img {
   --font-main: "Cera Pro", serif;
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+=======
+  --accent-color: #008cef;
+  --accent-color-second: #bdbdbd;
+  --bcg-color-one: #ffffff;
+  --bcg-color-two: #e5e5e5;
+  --font-main: "Cera Pro", serif;
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-hero {
+  padding: 40px 20px;
+>>>>>>> main
 }/*# sourceMappingURL=take-order-page.css.map */
