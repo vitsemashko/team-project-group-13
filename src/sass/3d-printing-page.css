@@ -26,6 +26,20 @@
   font-style: normal;
   font-display: fallback;
 }
+@font-face {
+  font-family: "Caviar Dreams";
+  src: local("Caviar Dreams"), url("../fonts/Caviar Dreams.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Caviar Dreams";
+  src: local("Caviar Dreams"), url("../fonts/Caviar Dreams Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
 ::after,
@@ -252,6 +266,114 @@ img {
   --bcg-color-two: #e5e5e5;
 >>>>>>> main
   --font-main: "Cera Pro", serif;
+  --font-second: "Caviar Dreams", serif;
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer {
+  padding: 32px 20px;
+  text-align: center;
+  background-color: #f5f5fa;
+  box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
+}
+.footer__logo {
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .footer__logo {
+    padding-right: 277px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 32px;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer__content {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .footer__content {
+    gap: 161px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__right {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .footer__right {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__left {
+    display: flex;
+    gap: 52px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .footer__left {
+    gap: 103px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 32px 40px;
+  }
+  .footer .container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.footer__nav, .footer__socs, .footer__email {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .footer__email {
+    margin-bottom: 16px;
+  }
+}
+.footer__contacts {
+  font-style: normal;
+}
+.footer__link {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--primary-color);
+  transition: color var(--duration), var(--timing-function);
+}
+.footer__link:hover, .footer__link:focus {
+  color: #1a3ebd;
+}
+.footer__text, .footer__item:not(:last-child), .footer__tel:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer__tel, .footer__email {
+  display: block;
+  color: var(--secondary-color);
+  transition: color var(--duration), var(--timing-function);
+  color: var(--secondary-color);
+}
+.footer__tel:hover, .footer__tel:focus, .footer__email:hover, .footer__email:focus {
+  color: #1a3ebd;
+}
+
+.logo__link {
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .logo__link {
+    padding-right: 277px;
+  }
 }/*# sourceMappingURL=3d-printing-page.css.map */
