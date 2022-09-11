@@ -1,4 +1,5 @@
-.gallery > .container {display: flex;
+.gallery > .container {
+  display: flex;
   flex-direction: column;
 
   padding: 40px 20px;
@@ -9,8 +10,8 @@
     padding-top: 120px 32px;
   }
 }
-
-.gallery__heading {justify-content: left;
+.gallery__heading {
+  justify-content: left;
   @include font(700, 24px, 1.25, null);
   color: var(--accent-color);
   margin-bottom: 16px;
@@ -41,7 +42,7 @@
   width: 280px;
   @include tablet {
     width: 336px;
-  };
+  }
   @include desktop {
     width: 555px;
   }
