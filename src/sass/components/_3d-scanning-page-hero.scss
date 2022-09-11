@@ -39,19 +39,16 @@
   .scanning-hero__title {
     font-family: 'Cera Pro';
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
+    @include font(700, 24px, 1.25);
     color: var(--secondary-color);
     margin-bottom: 16px;
+    
   }
   @media screen and (min-width: 768px) {
     .scanning-hero__title {
         font-family: 'Cera Pro';
         font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.25;
+        @include font(700, 36px, 1.25);
     }
   }
   
@@ -59,19 +56,15 @@
     .scanning-hero__title {
         font-family: 'Cera Pro';
         font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 60px;
-        margin-bottom: 1.25;
+        @include font(700, 48px, 1.25);
+        margin-bottom: 60px;
     }
   }
   
   .scanning-hero__description {
     font-family: 'Cera Pro';
     font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(300, 16px, 1.25);
     color: var(--primary-color);
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -101,9 +94,7 @@
     .scanning-hero__description {
         font-family: 'Cera Pro';
         font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 1.25;
+        @include font(300, 16px, 1.25);
       max-width: 515px;
       margin-top: 24px;
       margin-left: 32px;
@@ -124,6 +115,8 @@
   
   .scanning-hero__img {
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto
   }
   
   @media screen and (min-width: 768px) {
@@ -137,7 +130,7 @@
   }
   @media screen and (min-width: 1440px) {
     .scanning-hero__img {
-      right: 65px;
+      right: 400px;
       top: 116px;
     }
   }

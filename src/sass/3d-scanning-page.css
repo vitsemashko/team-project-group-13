@@ -391,6 +391,8 @@ img {
 }
 .scanning-hero__img {
   margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -404,7 +406,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .scanning-hero__img {
-    right: 65px;
+    right: 400px;
     top: 116px;
   }
 }
@@ -442,6 +444,7 @@ img {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-top: -15px;
+  margin-bottom: 80px;
 }
 
 .scanning-process__item-title {

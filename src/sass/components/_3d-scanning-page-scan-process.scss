@@ -3,9 +3,7 @@
 .scanning-process__title {
   font-family: 'Cera Pro';
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25;
+  @include font(700, 24px, 1.25);
     margin-bottom: 16px;
     color: var(--secondary-color);
   }
@@ -34,21 +32,21 @@
     flex-wrap: wrap;
     margin-left: -15px;
     margin-top: -15px;
+    margin-bottom: 80px;
   }
   
   .scanning-process__item-title {
     display: block;
     font-family: 'Cera Pro';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    @include font(400, 14px, 1.28);
     text-align: center;
     text-align: center;
     color: var(--secondary-color);
     min-width: 50px;
     word-wrap: break-word;
   }
+
   .scanning-process__item {
     position: relative;
     display: flex;
@@ -155,7 +153,6 @@
     }
   }
   
- 
   .scanning-process__item-title-one,
   .scanning-process__item-title-two {
     display: block;
