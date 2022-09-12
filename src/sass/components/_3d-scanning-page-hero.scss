@@ -1,137 +1,91 @@
-.container{
-    min-width: 320px;
-    max-width: 480px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @media screen and (min-width: 480px){
-        max-width: 480px;
-    }
-    @media screen and (min-width: 768px){
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1440px){
-        max-width: 1440px;
-    }
+.scanning-hero > .container {
+  position: relative;
+  padding-top: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+  gap: 16px;
+
+  @include tablet {
+    max-width: 768px;
+    padding-top: 104px;
+  }
+  @include desktop {
+    max-width: 1440px;
+    padding-top: 190px;
+    gap: 24px;
+  }
 }
 
-.scanning-hero-container {
-    position: relative;
-  }
-  
-  .scanning-hero {
-    padding-right: 20px;
-  }
+.scanning-hero__title {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  @include font(700, 24px, 1.25, null);
+  color: var(--secondary-color);
 
   @include tablet {
-    .scanning-hero {
-      margin-bottom: 52px;
-    }
-  }
-  @include desktop {
-    .scanning-hero {
-      padding-left: 0px;
-      margin-bottom: 100px;
-    }
-  }
-  
-  .scanning-hero__title {
     font-family: 'Cera Pro';
     font-style: normal;
-    @include font(700, 24px, 1.25, null);
-    color: var(--secondary-color);
-    margin-bottom: 16px;
-    
+    @include font(700, 36px, 1.25, null);
   }
-  @include tablet {
-    .scanning-hero__title {
-        font-family: 'Cera Pro';
-        font-style: normal;
-        @include font(700, 36px, 1.25, null);
-    }
-  }
-  
+
   @include desktop {
-    .scanning-hero__title {
-        font-family: 'Cera Pro';
-        font-style: normal;
-        @include font(700, 48px, 1.25, null);
-        margin-bottom: 60px;
-    }
-  }
-  
-  .scanning-hero__description {
     font-family: 'Cera Pro';
     font-style: normal;
-    @include font(300, 16px, 1.25, null);
-    color: var(--primary-color);
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  
-    &:last-child {
-      margin-bottom: 24px;
-    }
+    @include font(700, 48px, 1.25, null);
   }
+}
+
+.scanning-hero__list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   @include tablet {
-    .scanning-hero__description {
-      max-width: 514px;
-    }
+    margin-bottom: 0;
   }
-  
+
   @include desktop {
-    .scanning-hero__list {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -32px;
-      margin-top: -24px;
-    }
-    .scanning-hero__description-span {
-      display: block;
-    }
-  
-    .scanning-hero__description {
-        font-family: 'Cera Pro';
-        font-style: normal;
-        @include font(300, 16px, 1.25, null);
-      max-width: 515px;
-      margin-top: 24px;
-      margin-left: 32px;
-      flex-basis: calc((100% - 70px) / 2);
-      float: left;
-    }
-  
-    .one {
-      order: 1;
-    }
-    .two {
-      order: 3;
-    }
-    .three {
-      order: 2;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 72px;
   }
-  
-  .scanning-hero__img {
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto
-  }
-  
+}
+
+.scanning-hero__description {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  @include font(300, 16px, 1.25, null);
+  color: var(--primary-color);
+
   @include tablet {
-    .scanning-hero__img {
-      position: absolute;
-      right: -15px;
-      top: 170px;
-      z-index: -1;
-      margin-bottom: auto;
-    }
+    max-width: 514px;
   }
+
   @include desktop {
-    .scanning-hero__img {
-      right: 400px;
-     
-    }
+    @include font(300, 18px, 1.28, null);
   }
+}
+
+.scanning-hero__description--first {
+  margin-bottom: 16px;
+}
+
+.scanning-hero__img {
+  @include tablet {
+    position: absolute;
+    right: 6px;
+    top: 265px;
+    z-index: -1;
+    margin-bottom: auto;
+  }
+
+  @include desktop {
+    right: 400px;
+    right: 269px;
+    top: 366px;
+  }
+}
