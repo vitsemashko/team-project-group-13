@@ -4,22 +4,22 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 480px;
-  min-height: 1997px;
+  height: 0px;
   z-index: -1;
 
   @include tablet {
     max-width: 768px;
-    min-height: 1945px;
   }
 
   @include desktop {
     max-width: 1440px;
-    min-height: 3037px;
   }
 }
 
 .pattern__item--1 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -61,26 +61,24 @@
 }
 
 .pattern__item--3 {
-  display: none;
-
-  @include tablet {
-    position: absolute;
-    width: 144px;
-    height: 144px;
-    left: 569px;
-    top: 42px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px 0px 0px 72px;
-    transform: rotate(-90deg);
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (max-width: 1439px) {
     display: none;
   }
+
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 569px;
+  top: 42px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px 0px 0px 72px;
+  transform: rotate(-90deg);
 }
 
 .pattern__item--4 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -102,7 +100,9 @@
 }
 
 .pattern__item--5 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -124,7 +124,9 @@
 }
 
 .pattern__item--6 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -146,7 +148,9 @@
 }
 
 .pattern__item--7 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -168,7 +172,9 @@
 }
 
 .pattern__item--8 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -190,7 +196,9 @@
 }
 
 .pattern__item--9 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -258,7 +266,9 @@
 }
 
 .pattern__item--12 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -303,7 +313,9 @@
 }
 
 .pattern__item--14 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -348,7 +360,9 @@
 }
 
 .pattern__item--16 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -368,7 +382,9 @@
 }
 
 .pattern__item--17 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -390,7 +406,9 @@
 }
 
 .pattern__item--18 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -412,7 +430,9 @@
 }
 
 .pattern__item--19 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -434,7 +454,9 @@
 }
 
 .pattern__item--20 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -456,7 +478,9 @@
 }
 
 .pattern__item--21 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -478,7 +502,9 @@
 }
 
 .pattern__item--22 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -501,7 +527,9 @@
 }
 
 .pattern__item--23 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
@@ -545,12 +573,14 @@
 }
 
 .pattern__item--25 {
-  display: none;
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
 
   @include desktop {
     position: absolute;
-    width: 74px;
-    height: 74px;
+    width: 144px;
+    height: 144px;
     right: 32px;
     top: 1512px;
     border-radius: 72px;
@@ -606,7 +636,9 @@
 }
 
 .pattern__item--28 {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @include tablet {
     position: absolute;
