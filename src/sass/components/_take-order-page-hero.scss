@@ -1,236 +1,234 @@
 .order-hero {
-    padding: 40px 20px;
-    position: relative;
-    align-items: center;
+  padding: 40px 20px;
+  position: relative;
+  align-items: center;
 
-    @include mobile {
-        width: 480px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+  @include mobile {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    @include tablet {
-        padding: 40px 32px;
-        width: 704px;
-    }
+  @include tablet {
+    padding: 40px 32px;
+    width: 704px;
+  }
 
-    @include desktop {
-        width: 1259px;
-
-    }
+  @include desktop {
+    width: 1259px;
+  }
 }
-
 .order-hero__title {
-    margin-bottom: 16px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
-    color: var(--secondary-color);
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--secondary-color);
 
-    @include tablet {
-        font-size: 36px;
-        text-align: start;
-        width: 704px;
-    }
+  @include tablet {
+    font-size: 36px;
+    text-align: start;
+    width: 704px;
+  }
 
-    @include desktop {
-        font-size: 48px;
-        margin-bottom: 24px;
-    }
+  @include desktop {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
 }
 
 .order-hero__bg-img {
-    margin-bottom: 16px;
-    background-image: url('../images/order/order-hero-mx1.jpg');
-    border-radius: 15px;
-    width: 100%;
-    height: 171px;
-    background-size: cover;
-    background-position: center;
+  margin-bottom: 16px;
+  background-image: url('../images/order/order-hero-mx1.jpg');
+  border-radius: 15px;
+  width: 100%;
+  height: 171px;
+  background-size: cover;
+  background-position: center;
+
+  @include retina {
+    background-image: url('../images/order/order-hero-mx2.jpg');
+  }
+
+  @include tablet {
+    margin-right: 32px;
+    margin-bottom: 0;
+    width: 336px;
+    height: 158px;
+    background-image: url('../images/order/order-hero-tx1.jpg');
 
     @include retina {
-        background-image: url('../images/order/order-hero-mx2.jpg');
+      background-image: url('../images/order/order-hero-tx2.jpg');
     }
+  }
 
-    @include tablet {
-        margin-right: 32px;
-        margin-bottom: 0;
-        width: 336px;
-        height: 158px;
-        background-image: url('../images/order/order-hero-tx1.jpg');
+  @include desktop {
+    width: 555px;
+    height: 400px;
+    background-image: url('../images/order/order-hero-dx1.jpg');
 
-        @include retina {
-            background-image: url('../images/order/order-hero-tx2.jpg');
-        }
+    @include retina {
+      background-image: url('../images/order/order-hero-dx2.jpg');
     }
-
-    @include desktop {
-        width: 555px;
-        height: 400px;
-        background-image: url('../images/order/order-hero-dx1.jpg');
-
-        @include retina {
-            background-image: url('../images/order/order-hero-dx2.jpg');
-        }
-    }
+  }
 }
 
 .order-hero__shape {
-    position: absolute;
-    width: 73.65px;
-    height: 73.65px;
-    background-color: var(--bcg-color-one);
-    left: -33px;
-    top: 245px;
-    border-radius: 0px 0px 35px 0px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    z-index: -1;
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  background-color: var(--bcg-color-one);
+  left: -33px;
+  top: 245px;
+  border-radius: 0px 0px 35px 0px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: -1;
 
-    @include tablet {
-        width: 71.41px;
-        height: 63.79px;
-        left: 654px;
-        top: 12.47px;
-        rotate: 90deg;
-    }
+  @include tablet {
+    width: 71.41px;
+    height: 63.79px;
+    left: 654px;
+    top: 12.47px;
+    rotate: 90deg;
+  }
 
-    @include desktop {
-        width: 83px;
-        height: 137px;
-        left: 1208px;
-    }
+  @include desktop {
+    width: 83px;
+    height: 137px;
+    left: 1208px;
+  }
 }
 
 .order-hero__wrap {
-    @include tablet {
-        width: 704px;
-        display: flex;
-        align-items: center;
-    }
+  @include tablet {
+    width: 704px;
+    display: flex;
+    align-items: center;
+  }
 
-    @include desktop {
-        width: 1259px;
-        align-items: start;
-        position: relative;
-    }
+  @include desktop {
+    width: 1259px;
+    align-items: start;
+    position: relative;
+  }
 }
 
 .order-hero__shape-two {
-    display: none;
+  display: none;
 
-    @include desktop {
-        display: block;
-    }
+  @include desktop {
+    display: block;
+  }
 
-    width: 82px;
-    height: 78px;
-    position: absolute;
-    top: 45px;
-    left: -65px;
-    background-color: var(--bcg-color-one);
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 72px 0px;
+  width: 82px;
+  height: 78px;
+  position: absolute;
+  top: 45px;
+  left: -65px;
+  background-color: var(--bcg-color-one);
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 72px 0px;
 }
 
 .order-hero__img-one {
-    display: none;
+  display: none;
 
-    @include desktop {
-        display: block;
-    }
+  @include desktop {
+    display: block;
+  }
 
-    position: absolute;
-    top: 176px;
-    left: 587px;
-    background-image: url('../images/order/order-01d-x1.jpg');
-    background-size: 203px;
-    width: 203px;
-    height: 203px;
-    border-radius: 0px 72px 72px 0px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 176px;
+  left: 587px;
+  background-image: url('../images/order/order-01d-x1.jpg');
+  background-size: 203px;
+  width: 203px;
+  height: 203px;
+  border-radius: 0px 72px 72px 0px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
 
-    @include retina {
-        background-image: url('../images/order/order-01d-x2.jpg');
-    }
+  @include retina {
+    background-image: url('../images/order/order-01d-x2.jpg');
+  }
 }
 
 .order-hero__img-two {
-    display: none;
+  display: none;
 
-    @include desktop {
-        display: block;
-    }
+  @include desktop {
+    display: block;
+  }
 
-    position: absolute;
-    width: 203px;
-    height: 203px;
-    background-size: 203px;
-    background-image: url('../images/order/order-02d-x1.jpg');
-    top: 176px;
-    left: 822px;
-    border-radius: 72px 0px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 203px;
+  height: 203px;
+  background-size: 203px;
+  background-image: url('../images/order/order-02d-x1.jpg');
+  top: 176px;
+  left: 822px;
+  border-radius: 72px 0px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
 
-    @include retina {
-        background-image: url('../images/order/order-02d-x2.jpg');
-    }
+  @include retina {
+    background-image: url('../images/order/order-02d-x2.jpg');
+  }
 }
 
 .order-hero__img-three {
-    display: none;
+  display: none;
 
-    @include desktop {
-        display: block;
-    }
+  @include desktop {
+    display: block;
+  }
 
-    position: absolute;
-    width: 203px;
-    height: 203px;
-    background-size: 203px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
-    background-image: url('../images/order/order-03d-x1.jpg');
-    top: 176px;
-    left: 1056px;
-    border-radius: 0px 0px 72px 0px;
+  position: absolute;
+  width: 203px;
+  height: 203px;
+  background-size: 203px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  background-image: url('../images/order/order-03d-x1.jpg');
+  top: 176px;
+  left: 1056px;
+  border-radius: 0px 0px 72px 0px;
 
-    @include retina {
-        background-image: url('../images/order/order-03d-x2.jpg');
-    }
+  @include retina {
+    background-image: url('../images/order/order-03d-x2.jpg');
+  }
 }
 
 .order-hero__list {
-    @include tablet {
-        width: 336px;
-        height: 116px;
-    }
+  @include tablet {
+    width: 336px;
+    height: 116px;
+  }
 
-    @include desktop {
-        width: 672px;
-        padding-right: 110px;
-    }
+  @include desktop {
+    width: 672px;
+    padding-right: 110px;
+  }
 }
 
 .order-hero__item:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 
-    @include tablet {
-        margin-bottom: 0;
-    }
+  @include tablet {
+    margin-bottom: 0;
+  }
 
-    @include desktop {
-        margin-bottom: 24px;
-    }
+  @include desktop {
+    margin-bottom: 24px;
+  }
 }
 
 .order-hero__text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--primary-color);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primary-color);
 
-    @include desktop {
-        font-size: 18px;
-        line-height: 1.277;
-    }
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.277;
+  }
 }
