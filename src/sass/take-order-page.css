@@ -254,15 +254,6 @@ img {
 :root {
   --primary-color: #2b2b2b;
   --secondary-color: #487996;
-<<<<<<< HEAD
-  --accent-color:#008CEF
-  --accent-color-second:#BDBDBD;
-  --bcg-color-one: #ffffff;
-  --bcg-color-two: #E5E5E5;
-  --font-main: "Cera Pro", serif;
-  --duration: 250ms;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-=======
   --accent-color: #008cef;
   --accent-color-second: #bdbdbd;
   --bcg-color-one: #ffffff;
@@ -275,7 +266,6 @@ img {
 
 .order-hero {
   padding: 40px 20px;
-<<<<<<< HEAD
   position: relative;
   align-items: center;
 }
@@ -530,6 +520,179 @@ img {
   }
 }
 
+body {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.title {
+  color: rgb(72, 121, 150);
+  margin-bottom: 8px;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.27;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+.paragraph {
+  margin: 0px;
+}
+
+.section {
+  color: rgb(43, 43, 43);
+}
+
+.container {
+  padding: 60px 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 60px 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 68px 32px;
+  }
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .list {
+    display: block;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts {
+    padding-right: 0;
+    margin-right: 117px;
+  }
+}
+
+.contacts__number {
+  list-style: none;
+  padding: 0px;
+}
+
+.contacts__list {
+  margin-bottom: 8px;
+}
+
+.contacts__tel {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+}
+
+.contacts__mail {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+}
+
+@media screen and (min-width: 768px) {
+  .work {
+    margin-left: auto;
+    padding-right: 0px;
+    text-align: end;
+  }
+}
+.work__time {
+  list-style: none;
+  padding: 0px;
+}
+
+.time {
+  margin-bottom: 8px;
+}
+
+.picture {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .picture {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+.tabs {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .tabs {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: 117px;
+  }
+}
+
+.picture-one {
+  margin-top: 10px;
+}
+
+.picture-two {
+  margin-top: 15px;
+  margin-right: -5px;
+}
+
+.picture-thr {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.picture-four {
+  margin-top: -10px;
+}
+
+.picture-five {
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.picture-six {
+  margin-top: -15px;
+  margin-left: -5px;
+}
+
+.pict {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+}
+
 .footer {
   padding: 32px 20px;
   text-align: center;
@@ -635,7 +798,4 @@ img {
   .logo__link {
     padding-right: 277px;
   }
-=======
->>>>>>> main
->>>>>>> main
 }/*# sourceMappingURL=take-order-page.css.map */

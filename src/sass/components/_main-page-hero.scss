@@ -19,7 +19,7 @@
     @include font(400, 24px, 1.17, null);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-top: 98px;
     max-width: 630px;
     @include font(400, 48px, 1.17, null);
@@ -36,7 +36,7 @@
     gap: 29px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 32px;
   }
 }
@@ -67,7 +67,7 @@
     @include font(400, 18px, 1.17, null);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(400, 36px, 1.17, null);
   }
 }

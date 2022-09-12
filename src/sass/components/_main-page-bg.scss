@@ -1,0 +1,660 @@
+.pattern-wrap {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  height: 0px;
+  z-index: -1;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+  }
+}
+
+.pattern__item--1 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 1px;
+    border-radius: 35px 0px 0px 0px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 30px;
+    border-radius: 72px 0px 0px 0px;
+  }
+}
+
+.pattern__item--2 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 0;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 35px 35px 0px;
+
+  @include tablet {
+    left: 233px;
+    top: 1px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 292px;
+    border-radius: 0px 72px 72px 0px;
+  }
+}
+
+.pattern__item--3 {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  left: 569px;
+  top: 42px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px 0px 0px 72px;
+  transform: rotate(-90deg);
+}
+
+.pattern__item--4 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 74px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 30px;
+    top: 145px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.pattern__item--5 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 105px;
+    top: 71px;
+    border-radius: 35px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 174px;
+    top: 140px;
+    border-radius: 72px;
+  }
+}
+
+.pattern__item--6 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 106px;
+    top: 148px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 174px;
+    top: 290px;
+    border-radius: 0px 72px 0px 0px;
+  }
+}
+
+.pattern__item--7 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 222px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 30px;
+    top: 434px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.pattern__item--8 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 106px;
+    top: 296px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 174px;
+    top: 578px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.pattern__item--9 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 32px;
+    top: 358px;
+    border-radius: 35px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 30px;
+    top: 699px;
+    border-radius: 72px;
+  }
+}
+
+.pattern__item--10 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: -29px;
+  top: 295px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 35px 0px;
+
+  @include tablet {
+    left: 32px;
+    top: 432px;
+  }
+
+  @include desktop {
+    width: 110px;
+    height: 144px;
+    left: 30px;
+    top: 844px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.pattern__item--11 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: -17px;
+  top: 643px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 35px 0px;
+
+  @include tablet {
+    left: 32px;
+    top: 646px;
+  }
+
+  @include desktop {
+    width: 140px;
+    height: 161px;
+    left: 30px;
+    top: 1244px;
+    border-radius: 72px 0px;
+  }
+}
+
+.pattern__item--12 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 106px;
+    top: 940px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: 174px;
+    top: 1937px;
+    border-radius: 0px 72px 0px 0px;
+  }
+}
+
+.pattern__item--13 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: -18px;
+  top: 1062px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+
+  @include tablet {
+    left: 32px;
+    top: 1014px;
+  }
+
+  @include desktop {
+    width: 141px;
+    height: 145px;
+    left: 30px;
+    top: 2058px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.pattern__item--14 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: -17px;
+    top: 1329px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    left: -61px;
+    top: 2598px;
+    border-radius: 72px;
+  }
+}
+
+.pattern__item--15 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  right: 0;
+  top: 0;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 35px 0px 0px 35px;
+
+  @include tablet {
+    right: 215px;
+    top: 1px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 267px;
+    top: 1px;
+    border-radius: 72px 0px 0px 72px;
+  }
+}
+
+.pattern__item--16 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 78px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 176px;
+    top: 145px;
+  }
+}
+
+.pattern__item--17 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 78px;
+    border-radius: 0px 0px 72px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 32px;
+    top: 145px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.pattern__item--18 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 152px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 176px;
+    top: 290px;
+    border-radius: 72px;
+  }
+}
+
+.pattern__item--19 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 222px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 32px;
+    top: 434px;
+    border-radius: 72px 0px;
+  }
+}
+
+.pattern__item--20 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 296px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 176px;
+    top: 578px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.pattern__item--21 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 296px;
+    border-radius: 72px 72px 0px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 32px;
+    top: 578px;
+    border-radius: 72px 72px 0px 0px;
+  }
+}
+
+.pattern__item--22 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 370px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 124px;
+    right: 35px;
+    top: 722px;
+    border-radius: 0px 72px 0px 0px;
+  }
+}
+
+.pattern__item--23 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 32px;
+    top: 510px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+    transform: rotate(-180deg);
+  }
+
+  @include desktop {
+    width: 142px;
+    height: 144px;
+    right: 35px;
+    top: 1021px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.pattern__item--24 {
+  position: absolute;
+  width: 36px;
+  height: 74px;
+  right: 0px;
+  top: 581px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px 0 0 72px;
+
+  @include tablet {
+    top: 583px;
+  }
+
+  @include desktop {
+    width: 72px;
+    height: 144px;
+    right: 0px;
+    top: 1165px;
+  }
+}
+
+.pattern__item--25 {
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  @include desktop {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    right: 32px;
+    top: 1512px;
+    border-radius: 72px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.pattern__item--26 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  right: 0;
+  top: 1025px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+
+  @include tablet {
+    right: 32px;
+    top: 983px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 35px;
+    top: 2058px;
+    border-radius: 72px 0px;
+  }
+}
+
+.pattern__item--27 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  right: 0;
+  top: 1352px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+
+  @include tablet {
+    right: 32px;
+    top: 1359px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 144px;
+    right: 35px;
+    top: 2736px;
+    border-radius: 72px 0px;
+  }
+}
+
+.pattern__item--28 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 106px;
+    top: 1433px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  @include desktop {
+    width: 144px;
+    height: 116px;
+    right: 178px;
+    top: 2881px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
