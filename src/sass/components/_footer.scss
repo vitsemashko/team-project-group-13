@@ -1,19 +1,36 @@
 .footer {
-  padding: 32px 20px;
   text-align: center;
   background-color: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 
+  & .container {
+    padding: 32px 20px;
+    text-align: center;
+
+    @include tablet {
+      padding: 32px;
+      align-items: stretch;
+    }
+
+    @include desktop {
+      padding: 40px 32px;
+      flex-direction: row;
+    }
+  }
+
   &__logo {
     padding-bottom: 20px;
 
+    @include tablet {
+      margin: 0 auto;
+    }
+
     @include desktop {
+      margin: 0;
       padding-right: 277px;
     }
   }
   @include tablet {
-    padding: 32px;
-
     &__content {
       @include position(flex, null, space-between);
       text-align: left;
@@ -42,14 +59,6 @@
       @include desktop {
         gap: 103px;
       }
-    }
-  }
-
-  @include desktop {
-    padding: 32px 40px;
-
-    & .container {
-      @include position(flex, flex-start, null);
     }
   }
 
