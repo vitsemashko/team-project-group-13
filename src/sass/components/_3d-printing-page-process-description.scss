@@ -41,8 +41,11 @@
   }
   &__item {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include tablet {
-      display: flex;
+      flex-direction: row;
       gap: 32px;
     }
     @include desktop {
@@ -63,9 +66,6 @@
   }
   &__thumb {
     max-width: 100%;
-    @include mobile {
-      width: 280px;
-    }
     @include tablet {
       width: 336px;
     }
