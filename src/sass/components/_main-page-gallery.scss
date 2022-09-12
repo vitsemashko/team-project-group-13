@@ -1,41 +1,49 @@
 .gallery > .container {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  justify-content: center;
+  max-width: 320px;
 
   @include tablet {
     padding-top: 60px;
+    max-width: 768px;
   }
   @include desktop {
     padding-top: 120px;
+    max-width: 1440px;
   }
 }
+
 .gallery__heading {
-  justify-content: left;
   @include font(700, 24px, 1.25, null);
-  color: var(--accent-color);
+  color: var(--secondary-color);
   margin-bottom: 16px;
 
   @include tablet {
+    @include font(700, 36px, 1.25, null);
     margin-bottom: 32px;
-    font-size: 36px;
-    line-height: calc(45 / 36);
   }
+
   @include desktop {
+    @include font(700, 48px, 1.25, null);
     margin-bottom: 62px;
-    font-size: 48px;
-    line-height: calc(60 / 48);
-    margin-left: 149px;
   }
 }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 32px;
-  row-gap: 24px;
-  width: 100%;
+  gap: 24px;
+
+  @include tablet {
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  @include desktop {
+    row-gap: 40px;
+  }
 }
 
 .gallery-list__item {
@@ -50,16 +58,16 @@
 
 .gallery-list__heading {
   @include font(300, 16px, 1.25, null);
-  color: var(--accent-color);
+  color: var(--secondary-color);
   margin-top: 8px;
   max-width: 320;
+
   @include tablet {
     margin-top: 16px;
     max-width: 336px;
   }
   @include desktop {
-    font-size: 18px;
-    line-height: calc(23 / 18);
+    @include font(300, 18px, 1.28, null);
     max-width: 555px;
   }
 }
