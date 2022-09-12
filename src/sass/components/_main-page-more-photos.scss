@@ -1,19 +1,9 @@
 body.modal-open {
   overflow: hidden;
 }
-.more-photos {
+.more-photos > .container {
   padding-top: 40px;
   padding-bottom: 60px;
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-  @include desktop {
-    padding-top: 120px;
-    padding-bottom: 100px;
-  }
-}
-.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,14 +11,14 @@ body.modal-open {
     max-width: 480px;
   }
   @include tablet {
+    padding-top: 60px;
+    padding-bottom: 80px;
     max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   @include desktop {
+    padding-top: 120px;
+    padding-bottom: 100px;
     max-width: 1440px;
-    padding-left: 149px;
-    padding-right: 149px;
   }
 }
 .more-photos__title {

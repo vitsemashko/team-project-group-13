@@ -1,13 +1,13 @@
 .gallery > .container {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 
-  padding: 40px 20px;
   @include tablet {
-    padding: 60px 32px;
+    padding-top: 60px;
   }
   @include desktop {
-    padding-top: 120px 32px;
+    padding-top: 120px;
   }
 }
 .gallery__heading {
