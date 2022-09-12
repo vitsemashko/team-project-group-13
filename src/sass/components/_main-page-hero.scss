@@ -3,14 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 92px;
 
   @include tablet {
-    padding-top: 34px;
+    padding-top: 104px;
   }
 
   @include desktop {
-    padding-top: 98px;
+    padding-top: 188px;
   }
 }
 
