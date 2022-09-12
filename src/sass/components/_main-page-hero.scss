@@ -2,7 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  padding-top: 40px;
+
+  @include tablet {
+    padding-top: 34px;
+  }
+
+  @include desktop {
+    padding-top: 98px;
+  }
 }
 
 .main-hero__title {
@@ -11,7 +19,6 @@
   text-align: center;
   color: var(--primary-color);
   max-width: 280px;
-  margin-top: 40px;
 
   @include tablet {
     margin-top: 34px;
