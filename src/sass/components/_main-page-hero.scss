@@ -1,4 +1,5 @@
 .main-hero > .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +22,11 @@
   max-width: 280px;
 
   @include tablet {
-    margin-top: 34px;
     max-width: 336px;
     @include font(400, 24px, 1.17, null);
   }
 
   @include desktop {
-    margin-top: 98px;
     max-width: 630px;
     @include font(400, 48px, 1.17, null);
   }
@@ -41,6 +40,8 @@
 
   @include tablet {
     gap: 29px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   @include desktop {
@@ -62,6 +63,43 @@
 
 .main-hero__image--skull {
   border-radius: 0px 25px;
+}
+
+.arrow__btn {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 325px;
+    left: 134px;
+    width: 16px;
+    height: 16px;
+
+    background-color: transparent;
+    border: transparent;
+  }
+
+  @include desktop {
+    top: 635px;
+    left: 227px;
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.arrow__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 28px;
+  fill: var(--accent-color);
 }
 
 .main-hero__text {
