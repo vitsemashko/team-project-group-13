@@ -11,7 +11,7 @@
   }
 }
 .gallery__heading {
-  text-align: left;
+  justify-content: left;
   @include font(700, 24px, 1.25, null);
   color: var(--accent-color);
   margin-bottom: 16px;
@@ -40,7 +40,6 @@
 
 .gallery-list__item {
   width: 280px;
-
   @include tablet {
     width: 336px;
   }
