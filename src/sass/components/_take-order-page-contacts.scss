@@ -1,0 +1,154 @@
+body {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+    }
+}
+.title {
+    color: rgba(72, 121, 150, 1);
+    margin-bottom: 8px;
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 1.27;
+    font-weight: 700;
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 36px;
+    }
+}
+
+.paragraph {
+    margin: 0px;
+}
+
+.section {
+    color: rgba(43, 43, 43, 1);  
+}
+
+.container {
+    padding: 60px 20px;
+    @media screen and (min-width: 768px) {
+    padding: 60px 32px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 68px 32px;
+    }
+}
+
+.list {
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    @media screen and (min-width: 768px) {
+       display: flex; 
+    }
+    @media screen and (min-width: 1440px) {
+        display: block;
+        text-align: end;    
+    }   
+}
+
+.contacts {
+    @media screen and (min-width: 768px) {
+        padding-right: 30px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding-right: 0;
+        margin-right: 117px;   
+    }
+}
+
+.contacts__number {
+    list-style: none;
+    padding: 0px;
+}
+
+.contacts__list {
+    margin-bottom: 8px;
+}
+
+.contacts__tel {
+    list-style: none;
+    text-decoration: none;
+    color: rgba(43, 43, 43, 1);   
+}   
+
+.contacts__mail {
+  text-decoration: none;
+  color: rgba(43, 43, 43, 1);
+}
+
+.work {
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        padding-right: 0px;
+        text-align: end;
+    }
+    @media screen and (min-width: 1440px) {    
+    }
+}
+
+.work__time {
+    list-style: none;
+    padding: 0px;   
+}
+
+.time {
+    margin-bottom: 8px; 
+}
+
+.picture {
+    display: none;
+    @media screen and (min-width: 1440px) {
+     display: block;
+     padding-top: 0; 
+    }
+}
+
+.tabs {
+    display: none;
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: 117px;   
+    }
+}
+
+.picture-one {
+    margin-top: 10px;    
+}
+
+.picture-two {
+    margin-top: 15px;
+    margin-right: -5px;  
+}
+
+.picture-thr {
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.picture-four {
+    margin-top: -10px;
+}
+
+.picture-five {
+ margin-top: -5px;
+ margin-left: -5px;
+}
+
+.picture-six {
+ margin-top: -15px;
+ margin-left: -5px;
+}
+
+.pict {
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));    
+}    
