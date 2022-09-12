@@ -25,17 +25,16 @@ body.modal-open {
 }
 
 .more-photos__title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25;
-  color: #487996;
+  @include font(700, 24px, 1.25, null);
+  color: var(--secondary-color);
   margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
+
+  @include tablet {
+    @include font(700, 36px, 1.25, null);
     margin-bottom: 32px;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 48px;
+  @include desktop {
+    @include font(700, 48px, 1.25, null);
     margin-bottom: 60px;
   }
 }
@@ -43,7 +42,7 @@ body.modal-open {
 .more-photos__list {
   display: block;
   list-style: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
