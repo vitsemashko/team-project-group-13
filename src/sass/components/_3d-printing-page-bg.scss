@@ -1,0 +1,181 @@
+.model-wrap {
+  position: relative;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0px;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1440px;
+  }
+  background-color: #ffffff;
+  &__item-1 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    left: 0px;
+    border-radius: 0px 35px 35px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    @include tablet {
+      left: 232px;
+    }
+    @include desktop {
+      width: 141px;
+      height: 145px;
+      left: 267px;
+      border-radius: 0px 72px 72px 0px;
+    }
+  }
+  &__item-2 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    right: 0.5px;
+    border-radius: 35px 0px 0px 35px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    @include tablet {
+      right: 216px;
+    }
+    @include desktop {
+      width: 141px;
+      height: 145px;
+      right: 267px;
+      border-radius: 72px 0px 0px 72px;
+    }
+  }
+  &__item-3 {
+    position: absolute;
+    width: 74px;
+    height: 72px;
+    top: 299px;
+    left: 0px;
+    border-radius: 0px 0px 35px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+    @include tablet {
+      top: 222px;
+      left: 32px;
+    }
+    @include desktop {
+      width: 82px;
+      height: 78px;
+      top: 190px;
+      left: 35px;
+      border-radius: 0px 0px 72px 0px;
+    }
+  }
+  &__item-4 {
+    display: none;
+    @include tablet {
+      display: block;
+      position: absolute;
+      width: 72px;
+      height: 64px;
+      top: 83px;
+      right: 32px;
+      border-radius: 0px 0px 0px 35px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+    @include desktop {
+      width: 134px;
+      height: 137px;
+      top: 152px;
+      border-radius: 0px 0px 0px 72px;
+    }
+  }
+  &__item-5 {
+    display: none;
+    @include tablet {
+      display: block;
+      position: absolute;
+      width: 72px;
+      height: 74px;
+      top: 466px;
+      right: 32px;
+      border-radius: 35px 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+    @include desktop {
+      width: 137px;
+      height: 144px;
+      top: 665px;
+      right: 31px;
+      border-radius: 72px 0px;
+    }
+  }
+  &__item-6 {
+    display: none;
+    @include desktop {
+      display: block;
+      position: absolute;
+      width: 137px;
+      height: 134px;
+      top: 818px;
+      left: 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 72px;
+    }
+  }
+  &__item-7 {
+    @media screen and (max-width: 767.5px) {
+      position: absolute;
+      width: 72px;
+      height: 74px;
+      top: 643px;
+      left: 0px;
+      border-radius: 35px 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__item-8 {
+    @media screen and (max-width: 767.5px) {
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      top: 581px;
+      right: 0.5px;
+      border-radius: 72px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__item-9 {
+    @media screen and (max-width: 767.5px) {
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      top: 1062px;
+      left: 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 0px 0px 35px;
+    }
+  }
+  &__item-10 {
+    @media screen and (max-width: 767.5px) {
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      top: 1025px;
+      right: 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 35px;
+    }
+  }
+  &__item-11 {
+    @media screen and (max-width: 767.5px) {
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      top: 1352px;
+      right: 0px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 35px 0px;
+    }
+  }
+}
