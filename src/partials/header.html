@@ -1,7 +1,6 @@
 <header>
     <div class="container">
     <a href="" class="header__logo">
-      <picture>
         <picture>
             <source srcset="./images/logo-d-x1.png 1x, 
             ./images/logo-d-x2.png 2x"
@@ -45,9 +44,12 @@
               </li>
             </ul>
           </section>
-        <button type="button" class="menu-open">
-        <img src="./images/SVG/icon-burger.svg" class="burger-icon" width=32 height=32>
-      </button>
+          <button class="menu-open" type="button" data-menu-open>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+
         <button type="button" class="header-button__phone">
           <img src="./images/SVG/icon-call.svg" class="burger-icon" width=24 height=24></button>
         <button type="button"class="header-button__lang">ENG</button>
@@ -60,7 +62,6 @@
     <div class="container">
       <nav>
             <ul class="mob-menu-list list">
-              <ul>
             <li class="mob-menu-list__item">
               <a href="./index.html" class="mob-menu__link">ГОЛОВНА</a>
             </li>
