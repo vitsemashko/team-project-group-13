@@ -1,55 +1,90 @@
-.printing-examples > .container {padding: 40px 20px; 
-    @include tablet {padding: 60px 32px;};
-    @include desktop {padding-top: 120px 32px}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    max-width: 1440px;
+  }
 }
-    
+
 .printing-examples__heading {
-    @include font(700, 24px, 1.25, null);
-    color: var(--accent-color);
-    margin-bottom: 16px;
-    
-    @include tablet {
-        @include font(700, 36px, 1.25, null);}
+  @include font(700, 24px, 1.25, null);
+  color: var(--accent-color);
+  margin-bottom: 16px;
 
-    @include desktop {margin-bottom: 24px; margin-left: 132px;
-        @include font(700, 48px, 1.25, null);}
+  @include tablet {
+    @include font(700, 36px, 1.25, null);
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    margin-left: 132px;
+    @include font(700, 48px, 1.25, null);
+  }
 }
-.printing-examples-list {display: flex;
-    flex-wrap: wrap; 
-    column-gap: 20px;
-    row-gap: 16px;
-    justify-content: center;
-    @include tablet {gap: 32px};
-    @include desktop {gap: 32px;}}
+.printing-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 16px;
+  justify-content: center;
+  @include tablet {
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
+}
 
-.printing-examples-list__item {display: flex;
-align-items: center;
-justify-content: center;
+.printing-examples-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-flex-direction: column;
-padding: 28px 17px;
+  flex-direction: column;
+  padding: 28px 17px;
 
-width: calc((100% - 20px) / 2); 
-width: 130px;
-height: 158px;
-@include tablet {width: calc((100% - 96px) / 4);
-width: 152px;
-height: 182px;
-padding: 32px 25px;};
-@include desktop {height: 382px;
-width: 320;
-padding: 40px 40px 52px 40px;
-};
-background: #FFFFFF;
-opacity: 0.8;
-box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
-border-radius: 50px 0px;}
+  width: calc((100% - 20px) / 2);
+  //   width: 130px;
+  //   height: 158px;
+  @include tablet {
+    width: calc((100% - 96px) / 4);
+    // width: 152px;
+    // height: 182px;
+    padding: 32px 25px;
+  }
+  @include desktop {
+    // height: 382px;
+    // width: 320;
+    padding: 40px 40px 52px 40px;
+  }
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+}
 
+.printing-examples-list__heading {
+  @include font(300, 14px, 1.28, null);
+  color: var(--accent-color);
+  margin-top: 14px;
+  @include tablet {
+    margin-top: 16px;
+    max-width: 336px;
+  }
+  @include desktop {
+    @include font(300, 18px, 1.27, null);
 
-.printing-examples-list__heading { @include font(300, 14px, 1.28, null);
-    color: var(--accent-color);
-    margin-top: 14px;
-    @include tablet {margin-top: 16px; max-width: 336px};
-    @include desktop { @include font(300, 18px, 1.27, null);
-    
-    max-width: 555px;}}
+    max-width: 555px;
+  }
+}

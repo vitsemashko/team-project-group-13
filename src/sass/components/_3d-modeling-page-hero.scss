@@ -1,59 +1,50 @@
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-
-  @include mobile {
-    max-width: 480px;
-  }
+.modeling-hero > .container {
+  padding-top: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 320px;
 
   @include tablet {
+    padding-top: 104px;
     max-width: 768px;
   }
 
   @include desktop {
+    padding-top: 190px;
     max-width: 1440px;
-  }
-}
-
-.modeling-hero {
-  padding: 40px 20px;
-
-  @include tablet {
-    padding: 34px 0px 41px 32px;
-  }
-
-  @include desktop {
-    padding: 100px 189px 100px 149px;
+    gap: 24px;
   }
 }
 
 .modeling-hero__title {
   @include font(700, 24px, 1.25, null);
   color: #487996;
-  margin-bottom: 16px;
-  
+
   @include tablet {
     @include font(700, 36px, 1.25, null);
   }
-  
+
   @include desktop {
     @include font(700, 48px, 1.25, null);
-    margin-bottom: 24px;
   }
 }
 
 .modeling-hero__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
   @include desktop {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: 72px;
   }
 }
 
 .modeling-hero__item {
   @include font(300, 16px, 1.25, null);
-    color: #2b2b2b;
-    max-width: 280px;
+  color: #2b2b2b;
+  max-width: 280px;
 
   @include tablet {
     max-width: 515px;
@@ -62,11 +53,5 @@
   @include desktop {
     @include font(300, 18px, 1.28, null);
     max-width: 515px;
-  }
-
-  @media screen and (max-width: 1439px) {
-    &:first-child {
-      margin-bottom: 16px;
-    }
   }
 }

@@ -1,8 +1,17 @@
 .main-hero > .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  padding-top: 92px;
+
+  @include tablet {
+    padding-top: 104px;
+  }
+
+  @include desktop {
+    padding-top: 188px;
+  }
 }
 
 .main-hero__title {
@@ -11,16 +20,13 @@
   text-align: center;
   color: var(--primary-color);
   max-width: 280px;
-  margin-top: 40px;
 
   @include tablet {
-    margin-top: 34px;
     max-width: 336px;
     @include font(400, 24px, 1.17, null);
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 98px;
+  @include desktop {
     max-width: 630px;
     @include font(400, 48px, 1.17, null);
   }
@@ -34,9 +40,11 @@
 
   @include tablet {
     gap: 29px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 32px;
   }
 }
@@ -57,6 +65,43 @@
   border-radius: 0px 25px;
 }
 
+.arrow__btn {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 325px;
+    left: 134px;
+    width: 16px;
+    height: 16px;
+
+    background-color: transparent;
+    border: transparent;
+  }
+
+  @include desktop {
+    top: 635px;
+    left: 227px;
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.arrow__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 28px;
+  fill: var(--accent-color);
+}
+
 .main-hero__text {
   @include font(400, 16px, 1.19, null);
   font-family: var(--font-second);
@@ -67,7 +112,7 @@
     @include font(400, 18px, 1.17, null);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(400, 36px, 1.17, null);
   }
 }

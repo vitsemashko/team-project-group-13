@@ -1,36 +1,48 @@
+.scanning-process > .container {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 320px;
+
+  @include tablet {
+    max-width: 768px;
+    gap: 24px;
+  }
+
+  @include desktop {
+    padding-top: 100px;
+    max-width: 1440px;
+    gap: 40px;
+  }
+}
+
 .scanning-process__title {
   font-family: 'Cera Pro';
   font-style: normal;
-  @include font(700, 24px, 1.25, null);
-  margin-bottom: 16px;
+  @include font(700, 18px, 1.28, null);
   color: var(--secondary-color);
-}
 
-.scanning-process {
-  padding-right: 20px;
-  margin-bottom: 52px;
-}
-@include tablet {
-  .scanning-process__title {
-    margin-bottom: 24px;
+  @include tablet {
+    @include font(700, 24px, 1.25, null);
   }
-}
-@include desktop {
-  .scanning-process {
-    padding-left: 0px;
-    margin-bottom: 100px;
-  }
-  .scanning-process__title {
-    margin-bottom: 52px;
+
+  @include desktop {
+    @include font(700, 36px, 1.25, null);
   }
 }
 
 .scanning-process__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: -15px;
-  margin-bottom: 80px;
+  justify-content: space-between;
+  row-gap: 16px;
+  column-gap: 20px;
+
+  @include tablet {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
 }
 
 .scanning-process__item-title {
@@ -43,6 +55,10 @@
   color: var(--secondary-color);
   min-width: 50px;
   word-wrap: break-word;
+
+  @include desktop {
+    @include font(300, 18px, 1.28, null);
+  }
 }
 
 .scanning-process__item {
@@ -58,9 +74,6 @@
   opacity: 0.8;
   box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
-
-  margin-top: 15px;
-  margin-left: 15px;
   flex-basis: calc((100% - 30px) / 2);
 }
 
@@ -97,8 +110,6 @@
   .scanning-process__item {
     width: 153px;
     height: 210px;
-    margin-top: 12px;
-    margin-left: 12px;
     flex-basis: calc((100% - 48px) / 4);
   }
   .img-one::before {
@@ -119,9 +130,6 @@
   .scanning-process__item {
     width: 250px;
     height: 298px;
-
-    margin-top: 21px;
-    margin-left: 21px;
 
     flex-basis: calc((100% - 84px) / 4);
   }

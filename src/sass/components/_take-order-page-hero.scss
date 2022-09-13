@@ -74,32 +74,6 @@
   }
 }
 
-.order-hero__shape {
-  position: absolute;
-  width: 73.65px;
-  height: 73.65px;
-  background-color: var(--bcg-color-one);
-  left: -33px;
-  top: 245px;
-  border-radius: 0px 0px 35px 0px;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  z-index: -1;
-
-  @include tablet {
-    width: 71.41px;
-    height: 63.79px;
-    left: 654px;
-    top: 12.47px;
-    rotate: 90deg;
-  }
-
-  @include desktop {
-    width: 83px;
-    height: 137px;
-    left: 1208px;
-  }
-}
-
 .order-hero__wrap {
   @include tablet {
     width: 704px;
@@ -112,23 +86,6 @@
     align-items: start;
     position: relative;
   }
-}
-
-.order-hero__shape-two {
-  display: none;
-
-  @include desktop {
-    display: block;
-  }
-
-  width: 82px;
-  height: 78px;
-  position: absolute;
-  top: 45px;
-  left: -65px;
-  background-color: var(--bcg-color-one);
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 72px 0px;
 }
 
 .order-hero__img-one {
