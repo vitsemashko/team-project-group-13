@@ -9,7 +9,7 @@ body {
 .general {
   @media screen and (min-width: 1440px) {
     padding: 68px 32px;
-    display:flex;
+    display: flex;
     width: 100%;
     justify-content: space-between;
   }
@@ -39,10 +39,10 @@ body {
 .containerr {
   padding: 60px 20px;
   @media screen and (min-width: 768px) {
-    padding: 60px 32px;  
+    padding: 60px 32px;
   }
   @media screen and (min-width: 1440px) {
-    padding: 0px 0px; 
+    padding: 0px 0px;
   }
 }
 .list {
@@ -84,11 +84,21 @@ body {
   list-style: none;
   text-decoration: none;
   color: rgba(43, 43, 43, 1);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contacts__mail {
   text-decoration: none;
   color: rgba(43, 43, 43, 1);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
   @media screen and (min-width: 1440px) {
     margin-bottom: 30px;
   }
@@ -111,7 +121,6 @@ body {
 
 .time {
   margin-bottom: 8px;
-  
 }
 
 .picture {
