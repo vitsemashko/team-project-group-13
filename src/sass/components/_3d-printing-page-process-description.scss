@@ -114,12 +114,4 @@
   &:hover {
     background-color: #fff176;
   }
-
-  @include tablet {
-    margin: 60px auto 60px auto;
-  }
-
-  @include desktop {
-    margin: 80px auto 80px auto;
-  }
 }
