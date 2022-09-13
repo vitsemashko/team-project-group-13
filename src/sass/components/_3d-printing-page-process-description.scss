@@ -97,8 +97,11 @@
   }
 }
 .take-order-btn {
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  @media screen and (max-width: 767.5px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   padding: 16px 32px;
   width: 280px;
   height: 56px;
@@ -106,22 +109,11 @@
   border-radius: 30.5px;
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  cursor: pointer;
 
+  @include font(700, 16px, 1.5, 0.1em);
+  text-transform: uppercase;
+  color: var(--secondary-color);
   &:hover {
     background-color: #fff176;
-  }
-
-  @include tablet {
-    width: 277px;
-    padding: 16px 31px;
-  }
-  &__link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--secondary-color);
   }
 }
