@@ -93,6 +93,11 @@ header {
   display: flex;
   @include font(400, 16px, 1.25, 0.01em);
   color: var(--primary-color);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .drop-down {
   display: flex;
@@ -123,6 +128,11 @@ header {
 
 .menu-desktop__link {
   color: var(--primary-color);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu-open {
@@ -204,6 +214,11 @@ header {
   text-align: center;
 
   color: var(--secondary-color);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-menu__link--sub {
