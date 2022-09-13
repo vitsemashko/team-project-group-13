@@ -27,6 +27,7 @@ body {
   @media screen and (min-width: 1440px) {
     font-size: 36px;
     margin-top: 0px;
+    margin-bottom: 18px;
   }
 }
 .paragraph {
@@ -121,6 +122,12 @@ body {
 
 .time {
   margin-bottom: 8px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: end;
+    column-gap: 5px;
+    
+  }
 }
 
 .picture {

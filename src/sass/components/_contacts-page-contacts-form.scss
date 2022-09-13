@@ -1,6 +1,7 @@
 .section {
     @media screen and (min-width: 1440px) {
         margin-bottom: 80px;
+        display: flex;
     }
 }
 
@@ -37,6 +38,7 @@
         padding-right: 149px;
         margin-left: auto;
         margin-right: 0;
+        order: 2;
     }
 }
 
@@ -245,7 +247,7 @@
     }
 
 
-    @media screen and (mіn-width: 1440px) {
+    @media screen and (min-width: 1440px) {
         margin-top: 24px;
     }
 

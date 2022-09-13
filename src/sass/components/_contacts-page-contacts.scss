@@ -19,6 +19,9 @@ body {
   }
   @media screen and (min-width: 1440px) {
     font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 18px;
+
   }
 }
 
@@ -30,13 +33,15 @@ body {
   color: rgba(43, 43, 43, 1);
 }
 
-.container {
+.ccontainer {
   padding: 60px 20px;
   @media screen and (min-width: 768px) {
     padding: 60px 32px;
   }
   @media screen and (min-width: 1440px) {
     padding: 68px 32px;
+    padding-top: 0px;
+    order: 1;
   }
 }
 
@@ -50,6 +55,7 @@ body {
   @media screen and (min-width: 1440px) {
     display: block;
     text-align: start;
+    margin-left: 117px;
   }
 }
 
@@ -66,6 +72,9 @@ body {
 .contacts__number {
   list-style: none;
   padding: 0px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 68px;
+  }
 }
 
 .contacts__list {
@@ -90,6 +99,10 @@ body {
   &:hover,
   &:focus {
     color: var(--accent-color);
+  
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 68px;
   }
 }
 
@@ -111,4 +124,9 @@ body {
 
 .time {
   margin-bottom: 8px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    column-gap: 5px;
+    
+  }
 }
