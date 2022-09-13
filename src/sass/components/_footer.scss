@@ -3,22 +3,22 @@
   background-color: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 
-  & .container {
-    padding: 32px 20px;
-    text-align: center;
+  // & .container {
+  //   padding: 32px 20px;
+  //   text-align: center;
 
-    @include tablet {
-      max-width: 1200px;
-      padding: 32px;
-      align-items: stretch;
-    }
+  //   @include tablet {
+  //     width: 768px;
+  //     padding: 32px;
+  //     align-items: stretch;
+  //   }
 
-    @include desktop {
-      margin: 0;
-      padding: 40px 32px;
-      flex-direction: row;
-    }
-  }
+  //   @include desktop {
+  //     margin: 0;
+  //     padding: 40px 32px;
+  //     flex-direction: row;
+  //   }
+  // }
 
   &__logo {
     padding-bottom: 20px;
