@@ -1,14 +1,3 @@
-.container {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  @include tablet {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
 .container-desktop {
   @include desktop {
     padding-left: 150px;
@@ -18,15 +7,18 @@
   @include font(700, 24px, calc(30 / 24), null);
   font-family: var(--font-main);
   color: var(--secondary-color);
+  padding-top: 92px;
 
   margin-bottom: 16px;
   @include tablet {
     font-size: 36px;
     line-height: calc(45 / 36);
+    padding-top: 104px;
   }
   @include desktop {
     font-size: 48px;
     line-height: calc(60 / 48);
+    padding-top: 190px;
   }
 }
 .contacts-hero__container {
