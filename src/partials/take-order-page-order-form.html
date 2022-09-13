@@ -13,21 +13,6 @@
           required
         />
       </div>
-      <div class="form__select-custom" style="width: 100%">
-        <label for="print_quality"></label>
-        <select
-          class="form__select-item"
-          name="print_quality"
-          id="print_quality"
-        >
-          <option>Якість</option>
-          <option class="form__option-item" value="100">100 мікрон</option>
-          <option class="form__option-item" value="200">200 мікрон</option>
-          <option class="form__option-item" value="300">300 мікрон</option>
-          <option class="form__option-item" value="">
-            Труднощі у виборі - ми допоможемо
-          </option>
-        </select>
       <div class="email">
         <label for="user-email"></label>
         <input
@@ -38,7 +23,6 @@
           id="user-email"
           required
         />
->>>>>>> 9ca3cc6241c2da8f8e1e0a9880be70507721b158
       </div>
       <div class="select-list">
         <div class="form__select-custom" style="width: 100%">
@@ -59,6 +43,12 @@
             id="print_quality"
           >
             <option>Якість</option>
+            <option class="form__option-item" value="100">100 мікрон</option>
+            <option class="form__option-item" value="200">200 мікрон</option>
+            <option class="form__option-item" value="300">300 мікрон</option>
+            <option class="form__option-item" value="">
+              Труднощі у виборі - ми допоможемо
+            </option>
           </select>
         </div>
         <div class="form__select-custom" style="width: 100%">
@@ -76,7 +66,12 @@
           id="user-text"
           placeholder="Залишіть своє повідомлення"
         ></textarea>
-        <input type="file" name="file" id="intup-file" class="form__input-clip" />
+        <input
+          type="file"
+          name="file"
+          id="intup-file"
+          class="form__input-clip"
+        />
         <label for="intup-file" class="form__label-clip">
           <svg
             class="form__icon-clip"
@@ -113,39 +108,96 @@
   </div>
   <div class="containerr">
     <ul class="list">
-        <li class="contacts">
-         <h3 class="title">ТЕЛЕФОНИ</h3>
-         <ul class="contacts__number">
-          <li class="contacts__list"><a class="contacts__tel" href="tel:+380957384551">+38 (095) -73-84-551</a></li>
-          <li class="contacts__list"><a class="contacts__tel" href="tel:+380980025235">+38 (098) -00-25-235</a></li>
-         </ul>
-        </li>
-        <li class="contacts">
-         <h3 class="title">Email</h3>
-         <a class="contacts__mail" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
-        </li>
-        <li class="contacts work">
-         <h3 class="title">РОБОЧИЙ ЧАС</h3>
-         <ul class="work__time">
-           <li class="time">
-             <p class="paragraph">Пн-Пт:</p>
-             <p class="paragraph">З 8:00 До 19:00</p>
-           </li>
-           <li class="time">
+      <li class="contacts">
+        <h3 class="title">ТЕЛЕФОНИ</h3>
+        <ul class="contacts__number">
+          <li class="contacts__list">
+            <a class="contacts__tel" href="tel:+380957384551"
+              >+38 (095) -73-84-551</a
+            >
+          </li>
+          <li class="contacts__list">
+            <a class="contacts__tel" href="tel:+380980025235"
+              >+38 (098) -00-25-235</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="contacts">
+        <h3 class="title">Email</h3>
+        <a class="contacts__mail" href="mailto:3dfreedom.info@gmail.com"
+          >3dfreedom.info@gmail.com</a
+        >
+      </li>
+      <li class="contacts work">
+        <h3 class="title">РОБОЧИЙ ЧАС</h3>
+        <ul class="work__time">
+          <li class="time">
+            <p class="paragraph">Пн-Пт:</p>
+            <p class="paragraph">З 8:00 До 19:00</p>
+          </li>
+          <li class="time">
             <p class="paragraph">Сб, Нд:</p>
             <p class="paragraph">З 10:00 До 17:00</p>
-           </li>
-         </ul>
-        </li>
-      </ul>
-      <ul class="tabs">
-        <li class="picture-one"><img class="pict" src="/src/images/contacts/1.png"  alt="pic-1" width="140" height="140"/></li>
-        <li class="picture-two"><img class="pict" src="/src/images/contacts/2.png"  alt="pic-2" width="140" height="140"></li>
-        <li class="picture-thr"><img class="pict" src="/src/images/contacts/3.png"  alt="pic-3" width="140" height="140"></li>
-        <li class="picture-four"><img class="pict" src="/src/images/contacts/4.png"  alt="pic-4" width="140" height="140"></li>
-        <li class="picture-five"><img class="pict" src="/src/images/contacts/5.png"  alt="pic-5" width="140" height="140"></li>
-        <li class="picture-six"><img class="pict" src="/src/images/contacts/6.png"  alt="pic-6" width="140" height="140"></li>
-      </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="tabs">
+      <li class="picture-one">
+        <img
+          class="pict"
+          src="/src/images/contacts/1.png"
+          alt="pic-1"
+          width="140"
+          height="140"
+        />
+      </li>
+      <li class="picture-two">
+        <img
+          class="pict"
+          src="/src/images/contacts/2.png"
+          alt="pic-2"
+          width="140"
+          height="140"
+        />
+      </li>
+      <li class="picture-thr">
+        <img
+          class="pict"
+          src="/src/images/contacts/3.png"
+          alt="pic-3"
+          width="140"
+          height="140"
+        />
+      </li>
+      <li class="picture-four">
+        <img
+          class="pict"
+          src="/src/images/contacts/4.png"
+          alt="pic-4"
+          width="140"
+          height="140"
+        />
+      </li>
+      <li class="picture-five">
+        <img
+          class="pict"
+          src="/src/images/contacts/5.png"
+          alt="pic-5"
+          width="140"
+          height="140"
+        />
+      </li>
+      <li class="picture-six">
+        <img
+          class="pict"
+          src="/src/images/contacts/6.png"
+          alt="pic-6"
+          width="140"
+          height="140"
+        />
+      </li>
+    </ul>
   </div>
 </div>
-
