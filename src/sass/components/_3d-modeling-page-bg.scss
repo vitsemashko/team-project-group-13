@@ -2,11 +2,8 @@
   position: relative;
   top: 0;
   z-index: -1;
-  width: 100%;
+  width: 320px;
   height: 0px;
-  @include mobile {
-    width: 480px;
-  }
   @include tablet {
     width: 768px;
   }
