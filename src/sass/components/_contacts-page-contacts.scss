@@ -24,23 +24,6 @@
   color: rgba(43, 43, 43, 1);
 }
 
-.contacts__list {
-  list-style: none;
-  width: 100%;
-  padding: 0px;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-  @media screen and (min-width: 1440px) {
-    display: block;
-    text-align: start;
-    width: 515px;
-    // margin-left: 117px;
-  }
-}
-
 .contacts {
   @media screen and (min-width: 768px) {
     padding-right: 30px;
