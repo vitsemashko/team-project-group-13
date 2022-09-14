@@ -1,12 +1,3 @@
-body {
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-  }
-}
-
 .title {
   color: rgba(72, 121, 150, 1);
   margin-bottom: 8px;
@@ -19,6 +10,9 @@ body {
   }
   @media screen and (min-width: 1440px) {
     font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    margin-top: 100px;
   }
 }
 
@@ -30,26 +24,20 @@ body {
   color: rgba(43, 43, 43, 1);
 }
 
-.container {
-  padding: 60px 20px;
-  @media screen and (min-width: 768px) {
-    padding: 60px 32px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding: 68px 32px;
-  }
-}
-
-.list {
+.contacts__list {
   list-style: none;
   width: 100%;
   padding: 0px;
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
   @media screen and (min-width: 1440px) {
     display: block;
     text-align: start;
+    width: 515px;
+    // margin-left: 117px;
   }
 }
 
@@ -59,13 +47,16 @@ body {
   }
   @media screen and (min-width: 1440px) {
     padding-right: 0;
-    margin-right: 117px;
+    // margin-right: 117px;
   }
 }
 
 .contacts__number {
   list-style: none;
   padding: 0px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 68px;
+  }
 }
 
 .contacts__list {
@@ -91,6 +82,9 @@ body {
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 68px;
+  }
 }
 
 .work {
@@ -111,4 +105,8 @@ body {
 
 .time {
   margin-bottom: 8px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    column-gap: 5px;
+  }
 }

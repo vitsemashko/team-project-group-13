@@ -1,0 +1,350 @@
+.wrap {
+  @media screen and (max-width: 1439px) {
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    max-width: 555px;
+    padding: 0;
+    align-items: start;
+  }
+}
+
+.form {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    width: 410px;
+  }
+  @include desktop {
+    width: 555px;
+    margin: 0;
+  }
+}
+.form__title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: left;
+  text-transform: uppercase;
+
+  margin-bottom: 28px;
+
+  color: rgba(72, 121, 150, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+}
+.input {
+  line-height: normal;
+}
+
+.form__input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #487996;
+
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primary-color);
+
+  width: 100%;
+  padding-bottom: 4px;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input::placeholder {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primary-color);
+  opacity: 1;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.form__label {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.form__text {
+  width: 100%;
+  height: 199px;
+
+  padding: 22px 20px;
+
+  border: 1px solid rgba(72, 121, 150, 1);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  resize: none;
+  outline: none;
+
+  margin-bottom: 4px;
+}
+
+.form__text::placeholder {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #cdcdcd;
+}
+
+.form__note {
+  display: inline-block;
+  height: 60px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+
+  color: #cdcdcd;
+
+  @media screen and (min-width: 768px) {
+    height: 40px;
+  }
+}
+
+.form__note--transfer {
+  @media screen and (max-width: 767px) {
+    display: table;
+  }
+}
+
+.form__input-wrap {
+  position: relative;
+}
+
+.form__label-clip {
+  position: absolute;
+  bottom: 23px;
+  right: 21.31px;
+}
+
+.form__input-clip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.form__icon-clip {
+  width: 22px;
+  height: 20px;
+}
+
+.form__button {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: none;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (mіn-width: 1440px) {
+    margin-top: 24px;
+  }
+
+  padding: 16px 83.5px;
+
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #487996;
+
+  background-color: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+
+  @media screen and (min-width: 768px) {
+    width: 177px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: right;
+    margin-right: 0;
+  }
+}
+
+.general {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1440px;
+    padding-bottom: 80px;
+justify-content: space-between;
+  }
+}
+
+.contacts-overlay {
+  padding-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    padding: 0;
+max-width: 515px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.contacts__list {
+  list-style: none;
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+.contacts__item:first-child {
+  @include tablet {
+    margin-right: 25px;
+  }
+  @include desktop {
+    margin-right: 0;
+  }
+}
+.contacts__item:last-child {
+  @include tablet {
+    margin-left: auto;
+  }
+}
+.contacts__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+  @include desktop {
+    margin-bottom: 68px;
+  }
+}
+.contacts__title {
+  color: rgba(72, 121, 150, 1);
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.28;
+  font-weight: 700;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+}
+.phone__list {
+  list-style: none;
+  padding: 0px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 30px;
+  }
+}
+
+.phone__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.phone__link,
+.paragraph {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.25;
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  color: #2b2b2b;
+}
+.phone__link {
+  list-style: none;
+
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__mail {
+  text-decoration: none;
+  color: rgba(43, 43, 43, 1);
+  transition: color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 30px;
+  }
+}
+
+.work {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    padding-right: 0px;
+    text-align: end;
+  }
+}
+
+.work__time {
+  list-style: none;
+  padding: 0px;
+}
+
+.time {
+  margin-bottom: 8px;
+}
+.paragraph {
+  margin: 0px;
+}
