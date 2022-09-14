@@ -1,29 +1,43 @@
 .container-desktop {
+  padding-top: 92px;
+  padding-bottom: 60px;
+  width: 280px;
+  @include tablet {
+    width: 768px;
+    padding-top: 104px;
+  }
   @include desktop {
-    padding-left: 150px;
+    width: 1440px;
+    padding-top: 190px;
   }
 }
 .hero-title {
   @include font(700, 24px, calc(30 / 24), null);
   font-family: var(--font-main);
   color: var(--secondary-color);
-  padding-top: 92px;
 
   margin-bottom: 16px;
   @include tablet {
     font-size: 36px;
     line-height: calc(45 / 36);
-    padding-top: 104px;
   }
   @include desktop {
+    margin-bottom: 24px;
     font-size: 48px;
     line-height: calc(60 / 48);
-    padding-top: 190px;
   }
+  text-align: left;
 }
 .contacts-hero__container {
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
   @include tablet {
     display: flex;
+    width: 768px;
+  }
+  @include desktop {
+    width: 1440px;
   }
 }
 .contacts-hero__content {
@@ -32,19 +46,18 @@
   }
 }
 .contacts-hero__frame {
-  max-width: 555px;
-  max-height: 315px;
-  width: 100%;
-  height: 171px;
+  display: block;
   border-radius: 15px;
   margin-bottom: 16px;
 
-  @include mobile {
+  @media screen and (max-width: 767px) {
+    // margin-left: auto;
+    // margin-right: auto;
     width: 280px;
     height: 171px;
   }
   @include tablet {
-    min-width: 336px;
+    width: 336px;
     height: 261px;
     margin-bottom: 40px;
   }
