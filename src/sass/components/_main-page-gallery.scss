@@ -1,17 +1,24 @@
-.gallery > .container {
+.gallery {
   padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 320px;
 
   @include tablet {
     padding-top: 60px;
-    max-width: 768px;
   }
   @include desktop {
     padding-top: 120px;
-    max-width: 1440px;
+  }
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+
+    @include tablet {
+      max-width: 768px;
+    }
+    @include desktop {
+      max-width: 1440px;
+    }
   }
 }
 

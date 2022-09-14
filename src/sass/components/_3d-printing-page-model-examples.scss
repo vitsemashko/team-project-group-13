@@ -29,7 +29,7 @@
 }
 .printing-examples__heading {
   @include font(700, 24px, 1.25, null);
-  color: var(--accent-color);
+  color: var(--secondary-color);
   margin-bottom: 16px;
 
   @include tablet {
@@ -78,7 +78,7 @@
 
 .printing-examples-list__heading {
   @include font(300, 14px, 1.28, null);
-  color: var(--accent-color);
+  color: var(--secondary-color);
   margin-top: 14px;
   @include tablet {
     margin-top: 16px;
