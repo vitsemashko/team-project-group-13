@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-    <a href="" class="header__logo">
+    <a href="./index.html" class="header__logo">
         <picture>
             <source srcset="./images/logo-d-x1.png 1x, 
             ./images/logo-d-x2.png 2x"
@@ -14,72 +14,68 @@
             <img src="./images/logo-m-x1.png" alt="logo" />
           </picture> </a>
           <div class="menu-desktop">
-              <ul class="menu-desktop-list list">
-              <li class="menu-desktop-list__item">
+              <ul class="menu-desktop__list list">
+              <li class="menu-desktop__item">
                 <a href="./index.html" class="menu-desktop__link link">Головна</a>
               </li>
-                <li class="menu-desktop-list__item">
-                <a href="#" class="menu-desktop__link  drop-down link">Послуги 
-                  <img src="./images/SVG/Polygon 1.svg" class="polygon-icon" 
-                  width=10 height=4 alt="logo"></a>
-              <!-- <ul>
-                <li class="menu-desktop-list__item">
-                <a href="./3d-modeling-page.html" class="menu-desktop__link"
-                  >3D Моделювання</a
-                >
-                </li>
-                <li class="menu-desktop-list__item">
-                <a href="./3d-scanning-page.html" class="menu-desktop__link"
-                  >3D Сканування</a
-                >
-               </li>
-                <li class="menu-desktop-list__item">
-                <a href="./3d-printing-page.html" class="menu-desktop__link">3D Друк</a>
-                </li>
-            </ul> -->
+                <li class="menu-desktop__item dropdown menu-desktop__item--dropdown">
+                <a href="#" onclick="myFunction()" class="menu-desktop__link  dropbtn link">Послуги</a>
+                  <div id="offersDropdown" class="dropdown-content">
+                    <a href="./3d-modeling-page.html">3D Моделювання</a>
+                    <a href="./3d-scanning-page.html">3D Сканування</a>
+                    <a href="./3d-printing-page.html">3D Друк</a>
+                  </div>
             </li>
-              <li class="menu-desktop-list__item">
+              <li class="menu-desktop__item">
                 <a href="./take-order-page.html" class="menu-desktop__link link">Замовити</a>
               </li>
-              <li class="menu-desktop-list__item">
+              <li class="menu-desktop__item">
                 <a href="./contacts-page.html" class="menu-desktop__link link">Контакти</a>
               </li>
             </ul>
           </div>
-        <div class="menu-open" type="button" data-menu-open>
+        <button class="menu-open__btn" type="button">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
-        </div>
+        </button>
         <button type="button" class="header-button__phone">
           <img src="./images/SVG/icon-call.svg" class="burger-icon" width="24" height="24" alt="phone"></button>
         <button type="button"class="header-button__lang">ENG</button>
         <div class="header-phone">
           <a href="" class="s"><img src="./images/SVG/icon-call.svg" class="icon-call" width="14" height="14" alt="phone"> +38 (093) 643 22 88 </a>
           <a href="" class="s"><img src="./images/SVG/icon-call.svg" class="icon-call" width="14" height="14" alt="phone"> +38 (050) 345 44 23 </a>
-        </div> 
+        </div>
+
+<div class="phone-modal visually-hidden">
+  <ul class="phone-modal__list">
+    <li class="phone-modal__item"><a href="" class="s"> +38 (093) 643 22 88 </a></li>
+    <li class="phone-modal__item"><a href="" class="s"> +38 (050) 345 44 23 </a></li>
+  </ul>
+</div>
+
 <div class="mob-menu visually-hidden">
     <div class="container">
       <nav class="mob-menu__nav">
           <ul class="mob-menu__list list">
             <li class="mob-menu__item">
-              <a href="./index.html" class="mob-menu__link mob-menu__link--main">ГОЛОВНА</a>
+              <a href="./index.html" class="mob-menu__link mob-menu__link">ГОЛОВНА</a>
             </li>
               <li class="mob-menu__item">
               <a href="#" class="mob-menu__link">ПОСЛУГИ</a>
             </li>
-            <li class="mob-menu__item">
-              <a href="./3d-modeling-page.html" class="mob-menu__link"
+            <li class="mob-menu__item mob-menu__item--sub">
+              <a href="./3d-modeling-page.html" class="mob-menu__link mob-menu__link--sub"
                 >3D Моделювання</a
               >
             </li>
-            <li class="mob-menu__item">
-              <a href="./3d-scanning-page.html" class="mob-menu__link"
+            <li class="mob-menu__item mob-menu__item--sub">
+              <a href="./3d-scanning-page.html" class="mob-menu__link mob-menu__link--sub"
                 >3D Сканування</a
               >
             </li>
-            <li class="mob-menu__item">
-              <a href="./3d-printing-page.html" class="mob-menu__link">3D Друк</a>
+            <li class="mob-menu__item mob-menu__item--sub">
+              <a href="./3d-printing-page.html" class="mob-menu__link mob-menu__link--sub">3D Друк</a>
             </li>
             <li class="mob-menu__item">
               <a href="./take-order-page.html" class="mob-menu__link">ЗАМОВИТИ</a>
@@ -92,4 +88,6 @@
         </div>      
     </div>
     <script type="module" src="./menu.js"></script>
+    <script type="module" src="./header-dropdown.js"></script>
+    <script type="module" src="./phone.js"></script>
 </header>

@@ -1,83 +1,83 @@
 .footer {
-  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   background-color: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
-
-  & .container {
-    padding: 32px 20px;
-    text-align: center;
-
-    @include tablet {
-      max-width: 1200px;
-      padding: 32px;
-      align-items: stretch;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 767.5px) {
+      width: 320px;
     }
-
+    @include tablet {
+      width: 768px;
+    }
     @include desktop {
-      margin: 0;
-      padding: 40px 32px;
+      width: 1440px;
       flex-direction: row;
+      align-items: flex-start;
+      gap: 277px;
     }
   }
-
-  &__logo {
-    padding-bottom: 20px;
-
+  &__content {
+    width: 100%;
+    text-align: center;
     @include tablet {
-      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
-
     @include desktop {
-      margin: 0;
-      padding-right: 277px;
+      min-width: fit-content;
+      gap: 161px;
     }
   }
-  @include tablet {
-    &__content {
-      @include position(flex, null, space-between);
-      text-align: left;
-
-      @media screen and (max-width: 1200px) {
-        justify-content: space-evenly;
-      }
-
-      @include desktop {
-        gap: 161px;
-      }
+  &__logo {
+    min-width: fit-content;
+    @media screen and (max-width: 1439.5px) {
+      margin-bottom: 20px;
     }
-
-    &__right {
-      text-align: right;
-
-      @include desktop {
-        text-align: left;
-      }
-    }
-
-    &__left {
+  }
+  &__left {
+    @include tablet {
       display: flex;
       gap: 52px;
-
-      @include desktop {
-        gap: 103px;
-      }
+      text-align: start;
+    }
+    @include desktop {
+      gap: 103px;
+    }
+  }
+  &__right {
+    @include tablet {
+      text-align: end;
+      padding-bottom: 0;
+    }
+    @include desktop {
+      text-align: start;
     }
   }
 
   &__nav,
   &__socs,
   &__email {
-    margin-bottom: 24px;
-  }
-
-  @include tablet {
-    &__email {
-      margin-bottom: 16px;
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 24px;
     }
   }
 
   &__contacts {
     font-style: normal;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__link {
@@ -93,7 +93,7 @@
   }
 
   &__text,
-  &__item:not(:last-child),
+  &__item,
   &__tel:not(:last-child) {
     margin-bottom: 8px;
   }
@@ -111,12 +111,5 @@
     }
 
     color: var(--secondary-color);
-  }
-}
-.logo__link {
-  padding-bottom: 20px;
-
-  @include desktop {
-    padding-right: 277px;
   }
 }
