@@ -20,11 +20,12 @@
     @include desktop {
       width: 1440px;
       flex-direction: row;
+      align-items: flex-start;
       gap: 277px;
     }
   }
   &__content {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     @include tablet {
       display: flex;
@@ -32,11 +33,12 @@
       justify-content: space-between;
     }
     @include desktop {
-      min-width: auto;
-      gap: 150px;
+      min-width: fit-content;
+      gap: 161px;
     }
   }
   &__logo {
+    min-width: fit-content;
     @media screen and (max-width: 1439.5px) {
       margin-bottom: 20px;
     }
