@@ -175,41 +175,4 @@
       border-radius: 35px 0px;
     }
   }
-  &__item-12 {
-    @include tablet {
-      position: absolute;
-      width: 74px;
-      height: 72px;
-      top: 1031px;
-      right: 32px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 0px 35px;
-    }
-    @include desktop {
-      width: 143px;
-      height: 145px;
-      top: 1708px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 35px 0px;
-    }
-  }
-  &__item-13 {
-    @include tablet {
-      position: absolute;
-      width: 72px;
-      height: 64px;
-      top: 1103px;
-      right: 104px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 0px 0px 0px 35px;
-    }
-    @include desktop {
-      width: 143px;
-      height: 116px;
-      top: 1853px;
-      right: 175px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 0px 0px 0px 72px;
-    }
-  }
 }
