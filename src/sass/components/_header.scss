@@ -79,7 +79,6 @@ header {
   @include tablet {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-left: auto;
   }
   @include desktop {
@@ -106,7 +105,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
 }
 
 .phone-modal__item::before {
@@ -129,6 +127,8 @@ header {
   display: flex;
   @include font(400, 16px, 1.25, 0.01em);
   color: var(--primary-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
   transition: color var(--duration) var(--timing-function);
   &:hover,
   &:focus {
@@ -162,12 +162,12 @@ header {
   color: var(--primary-color);
 }
 
-.menu-desktop__item--dropdown {
-  transition: 0.9s opacity;
-}
-
 .menu-desktop__item--dropdown:hover .sub-menu__list {
   opacity: 1;
+}
+
+.menu-desktop__item--dropdown {
+  transition: opacity var(--duration) var(--timing-function);
 }
 
 .menu-desktop__link {
@@ -182,7 +182,7 @@ header {
 .menu-desktop__arrow {
   position: absolute;
   right: 748px;
-  top: 65px;
+  top: 70px;
   width: 0;
   height: 0;
   border-top: 5px solid #008cef;
@@ -194,7 +194,7 @@ header {
   opacity: 0;
   position: absolute;
   left: 575px;
-  top: 82px;
+  top: 87px;
   background-color: transparent;
 }
 
