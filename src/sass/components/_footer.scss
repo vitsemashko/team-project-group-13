@@ -1,28 +1,81 @@
 .footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   background-color: #f5f5fa;
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
-
-  &__logo {
-    padding-bottom: 20px;
-
-    @include tablet {
-      margin: 0 auto;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 767.5px) {
+      width: 320px;
     }
-
+    @include tablet {
+      width: 768px;
+    }
     @include desktop {
-      margin: 0;
-      padding-right: 277px;
+      width: 1440px;
+      flex-direction: row;
+      gap: 277px;
+    }
+  }
+  &__content {
+    max-width: 100%;
+    text-align: center;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include desktop {
+      min-width: auto;
+      gap: 150px;
+    }
+  }
+  &__logo {
+    @media screen and (max-width: 1439.5px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__left {
+    @include tablet {
+      display: flex;
+      gap: 52px;
+      text-align: start;
+    }
+    @include desktop {
+      gap: 103px;
+    }
+  }
+  &__right {
+    @include tablet {
+      text-align: end;
+      padding-bottom: 0;
+    }
+    @include desktop {
+      text-align: start;
     }
   }
 
   &__nav,
   &__socs,
   &__email {
-    margin-bottom: 24px;
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__contacts {
     font-style: normal;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__link {
@@ -38,7 +91,7 @@
   }
 
   &__text,
-  &__item:not(:last-child),
+  &__item,
   &__tel:not(:last-child) {
     margin-bottom: 8px;
   }
